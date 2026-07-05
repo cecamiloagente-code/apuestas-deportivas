@@ -21,11 +21,17 @@
     th, td { padding:12px 10px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; font-size:.92rem; }
     th { color:var(--muted); font-size:.75rem; text-transform:uppercase; }
     .status { display:inline-block; padding:4px 9px; border-radius:999px; font-weight:900; font-size:.78rem; }
-    .side { display:inline-block; min-width:74px; padding:3px 8px; margin-right:6px; border-radius:6px; background:#eef4ef; color:var(--ink); font-weight:900; font-size:.74rem; text-align:center; }
-    .side-draw { background:#fff5da; color:var(--amber); }
-    .side-away { background:#eaf0f8; color:#245f9d; }
-    .pick { color:var(--ink); font-weight:900; }
-    .match-line { color:var(--muted); font-size:.84rem; }
+    .bet-slip { display:grid; gap:8px; margin:0 0 12px; padding-bottom:12px; border-bottom:1px solid var(--line); }
+    .bet-slip:last-child { margin-bottom:0; padding-bottom:0; border-bottom:0; }
+    .match-title { color:var(--ink); font-weight:900; }
+    .market-grid { display:grid; grid-template-columns:repeat(3, minmax(120px, 1fr)); gap:8px; }
+    .market-option { min-height:48px; display:flex; flex-direction:column; justify-content:center; gap:2px; padding:8px 10px; border:1px solid var(--line); border-radius:6px; background:#f8faf7; color:var(--muted); }
+    .market-option strong { color:var(--ink); font-size:.86rem; }
+    .market-option span { font-size:.74rem; font-weight:800; text-transform:uppercase; }
+    .market-option.selected { border-color:var(--green); background:#e7f5ec; box-shadow:inset 0 0 0 1px var(--green); }
+    .market-option.selected strong, .market-option.selected .odds { color:var(--green); }
+    .odds { font-weight:1000; }
+    .match-line { color:var(--muted); font-size:.8rem; }
     .pending { background:#fff5da; color:var(--amber); }
     .won { background:#e6f5ec; color:var(--green); }
     .lost { background:#fae8e6; color:var(--red); }
@@ -48,11 +54,12 @@
     </header>
     <section class="grid">
       <article class="card wide"><span>Banca inicial</span><strong>$ 1.000.000</strong></article>
-      <article class="card wide"><span>Banca actual</span><strong>$ 1.000.000</strong></article>
+      <article class="card wide"><span>Banca disponible</span><strong>$ 950.000</strong></article>
+      <article class="card wide"><span>Banca con pendientes</span><strong>$ 1.000.000</strong></article>
       <article class="card wide"><span>Ganancia/Pérdida</span><strong>$ 0</strong></article>
       <article class="card wide"><span>Objetivo 10x</span><strong>$ 10.000.000</strong></article>
-      <article class="card wide"><span>Falta para 10x</span><strong>$ 9.000.000</strong></article>
-      <article class="card "><span>Crecimiento diario req.</span><strong>1.29%</strong></article>
+      <article class="card wide"><span>Falta para 10x</span><strong>$ 9.050.000</strong></article>
+      <article class="card "><span>Crecimiento diario req.</span><strong>1.32%</strong></article>
       <article class="card "><span>Apostado</span><strong>$ 50.000</strong></article>
       <article class="card "><span>Exposición pendiente</span><strong>$ 50.000</strong></article>
       <article class="card "><span>ROI</span><strong>0.0%</strong></article>
@@ -77,16 +84,46 @@
     <td>2.88</td>
     <td>$ 28.800</td>
     <td class="profit">Pendiente</td>
-    <td class="legs"><div>
-    <span class="side ">Local</span>
-    <span class="pick">Kalmar FF</span>
-    <span>@ 1.51</span>
-    <div class="match-line">Local: Kalmar FF · Visitante: Örgryte IS · Swedish Allsvenskan</div>
-  </div><br><div>
-    <span class="side side-away">Visitante</span>
-    <span class="pick">Hammarby IF</span>
-    <span>@ 1.91</span>
-    <div class="match-line">Local: IF Elfsborg · Visitante: Hammarby IF · Swedish Allsvenskan</div>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">Kalmar FF vs Örgryte IS</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Kalmar FF</strong>
+    <div class="odds">1.51</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>Örgryte IS</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Swedish Allsvenskan · Selección: Local · Cuota: 1.51</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">IF Elfsborg vs Hammarby IF</div>
+    <div class="market-grid">
+      <div class="market-option ">
+    <span>Local</span>
+    <strong>IF Elfsborg</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option selected">
+    <span>Visitante</span>
+    <strong>Hammarby IF</strong>
+    <div class="odds">1.91</div>
+  </div>
+    </div>
+    <div class="match-line">Swedish Allsvenskan · Selección: Visitante · Cuota: 1.91</div>
   </div></td>
   </tr><tr>
     <td><span class="status pending">Pendiente</span></td>
@@ -95,16 +132,46 @@
     <td>3.32</td>
     <td>$ 33.200</td>
     <td class="profit">Pendiente</td>
-    <td class="legs"><div>
-    <span class="side ">Local</span>
-    <span class="pick">Kalmar FF</span>
-    <span>@ 1.51</span>
-    <div class="match-line">Local: Kalmar FF · Visitante: Örgryte IS · Swedish Allsvenskan</div>
-  </div><br><div>
-    <span class="side ">Local</span>
-    <span class="pick">IFK Göteborg</span>
-    <span>@ 2.2</span>
-    <div class="match-line">Local: IFK Göteborg · Visitante: AIK · Swedish Allsvenskan</div>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">Kalmar FF vs Örgryte IS</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Kalmar FF</strong>
+    <div class="odds">1.51</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>Örgryte IS</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Swedish Allsvenskan · Selección: Local · Cuota: 1.51</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">IFK Göteborg vs AIK</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>IFK Göteborg</strong>
+    <div class="odds">2.2</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>AIK</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Swedish Allsvenskan · Selección: Local · Cuota: 2.2</div>
   </div></td>
   </tr><tr>
     <td><span class="status pending">Pendiente</span></td>
@@ -113,16 +180,46 @@
     <td>2.73</td>
     <td>$ 27.300</td>
     <td class="profit">Pendiente</td>
-    <td class="legs"><div>
-    <span class="side side-away">Visitante</span>
-    <span class="pick">Flamengo</span>
-    <span>@ 1.43</span>
-    <div class="match-line">Local: Chapecoense · Visitante: Flamengo · Brasileirão Serie A</div>
-  </div><br><div>
-    <span class="side side-away">Visitante</span>
-    <span class="pick">Hammarby IF</span>
-    <span>@ 1.91</span>
-    <div class="match-line">Local: IF Elfsborg · Visitante: Hammarby IF · Swedish Allsvenskan</div>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">Chapecoense vs Flamengo</div>
+    <div class="market-grid">
+      <div class="market-option ">
+    <span>Local</span>
+    <strong>Chapecoense</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option selected">
+    <span>Visitante</span>
+    <strong>Flamengo</strong>
+    <div class="odds">1.43</div>
+  </div>
+    </div>
+    <div class="match-line">Brasileirão Serie A · Selección: Visitante · Cuota: 1.43</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">IF Elfsborg vs Hammarby IF</div>
+    <div class="market-grid">
+      <div class="market-option ">
+    <span>Local</span>
+    <strong>IF Elfsborg</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option selected">
+    <span>Visitante</span>
+    <strong>Hammarby IF</strong>
+    <div class="odds">1.91</div>
+  </div>
+    </div>
+    <div class="match-line">Swedish Allsvenskan · Selección: Visitante · Cuota: 1.91</div>
   </div></td>
   </tr><tr>
     <td><span class="status pending">Pendiente</span></td>
@@ -131,16 +228,46 @@
     <td>2.92</td>
     <td>$ 29.200</td>
     <td class="profit">Pendiente</td>
-    <td class="legs"><div>
-    <span class="side ">Local</span>
-    <span class="pick">Corinthians</span>
-    <span>@ 1.53</span>
-    <div class="match-line">Local: Corinthians · Visitante: Remo · Brasileirão Serie A</div>
-  </div><br><div>
-    <span class="side side-away">Visitante</span>
-    <span class="pick">Hammarby IF</span>
-    <span>@ 1.91</span>
-    <div class="match-line">Local: IF Elfsborg · Visitante: Hammarby IF · Swedish Allsvenskan</div>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">Corinthians vs Remo</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Corinthians</strong>
+    <div class="odds">1.53</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>Remo</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Brasileirão Serie A · Selección: Local · Cuota: 1.53</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">IF Elfsborg vs Hammarby IF</div>
+    <div class="market-grid">
+      <div class="market-option ">
+    <span>Local</span>
+    <strong>IF Elfsborg</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option selected">
+    <span>Visitante</span>
+    <strong>Hammarby IF</strong>
+    <div class="odds">1.91</div>
+  </div>
+    </div>
+    <div class="match-line">Swedish Allsvenskan · Selección: Visitante · Cuota: 1.91</div>
   </div></td>
   </tr><tr>
     <td><span class="status pending">Pendiente</span></td>
@@ -149,16 +276,46 @@
     <td>2.88</td>
     <td>$ 28.800</td>
     <td class="profit">Pendiente</td>
-    <td class="legs"><div>
-    <span class="side ">Local</span>
-    <span class="pick">Kalmar FF</span>
-    <span>@ 1.51</span>
-    <div class="match-line">Local: Kalmar FF · Visitante: Örgryte IS · Swedish Allsvenskan</div>
-  </div><br><div>
-    <span class="side ">Local</span>
-    <span class="pick">São Paulo</span>
-    <span>@ 1.91</span>
-    <div class="match-line">Local: São Paulo · Visitante: Athletico-PR · Brasileirão Serie A</div>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">Kalmar FF vs Örgryte IS</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Kalmar FF</strong>
+    <div class="odds">1.51</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>Örgryte IS</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Swedish Allsvenskan · Selección: Local · Cuota: 1.51</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">São Paulo vs Athletico-PR</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>São Paulo</strong>
+    <div class="odds">1.91</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>Athletico-PR</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Brasileirão Serie A · Selección: Local · Cuota: 1.91</div>
   </div></td>
   </tr></tbody>
       </table>
