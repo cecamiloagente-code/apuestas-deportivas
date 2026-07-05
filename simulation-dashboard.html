@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulación de Combinadas</title>
+  <style>
+    :root { color-scheme: light; --bg:#f5f7f3; --ink:#17211b; --muted:#657269; --panel:#fff; --line:#dfe7df; --green:#19764a; --red:#b33a35; --amber:#a46613; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--bg); color:var(--ink); }
+    main { width:min(1180px, calc(100% - 28px)); margin:0 auto; padding:28px 0 44px; }
+    header { display:flex; justify-content:space-between; gap:20px; align-items:end; margin-bottom:18px; }
+    h1 { margin:0; font-size:clamp(2rem, 5vw, 4rem); line-height:1; letter-spacing:0; }
+    .meta { color:var(--muted); font-weight:700; }
+    .grid { display:grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap:12px; margin-bottom:18px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; box-shadow:0 10px 28px rgba(23,33,27,.07); }
+    .card span { display:block; color:var(--muted); font-size:.82rem; font-weight:800; }
+    .card strong { display:block; margin-top:8px; font-size:1.35rem; }
+    .wide { grid-column: span 2; }
+    table { width:100%; border-collapse:collapse; background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+    th, td { padding:12px 10px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; font-size:.92rem; }
+    th { color:var(--muted); font-size:.75rem; text-transform:uppercase; }
+    .status { display:inline-block; padding:4px 9px; border-radius:999px; font-weight:900; font-size:.78rem; }
+    .pending { background:#fff5da; color:var(--amber); }
+    .won { background:#e6f5ec; color:var(--green); }
+    .lost { background:#fae8e6; color:var(--red); }
+    .legs { color:var(--muted); line-height:1.5; }
+    .profit { color:var(--green); font-weight:900; }
+    .loss { color:var(--red); font-weight:900; }
+    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } .wide { grid-column: span 1; } header { display:block; } table { min-width:900px; } .table-wrap { overflow-x:auto; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <div class="meta">Simulación sin dinero real · ligas activas sin Mundial</div>
+        <h1>Combinadas</h1>
+      </div>
+      <div class="meta">Actualizado: 4/07/2026, 8:58 p. m.</div>
+    </header>
+    <section class="grid">
+      <article class="card wide"><span>Banca inicial</span><strong>$ 1.000.000</strong></article>
+      <article class="card wide"><span>Banca actual</span><strong>$ 1.000.000</strong></article>
+      <article class="card wide"><span>Ganancia/Pérdida</span><strong>$ 0</strong></article>
+      <article class="card "><span>Apostado</span><strong>$ 50.000</strong></article>
+      <article class="card "><span>Exposición pendiente</span><strong>$ 50.000</strong></article>
+      <article class="card "><span>ROI</span><strong>0.0%</strong></article>
+      <article class="card "><span>Combinadas</span><strong>5</strong></article>
+      <article class="card "><span>Ganadas</span><strong>0</strong></article>
+      <article class="card "><span>Perdidas</span><strong>0</strong></article>
+    </section>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Estado</th><th>Fecha</th><th>Stake</th><th>Cuota</th><th>Retorno Pot.</th><th>Resultado</th><th>Selecciones</th></tr>
+        </thead>
+        <tbody><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>4/07/2026, 8:44 p. m.</td>
+    <td>$ 10.000</td>
+    <td>2.88</td>
+    <td>$ 28.800</td>
+    <td class="profit">Pendiente</td>
+    <td class="legs">Kalmar FF @ 1.51 · Kalmar FF vs Örgryte IS · Swedish Allsvenskan<br>Hammarby IF @ 1.91 · IF Elfsborg vs Hammarby IF · Swedish Allsvenskan</td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>4/07/2026, 8:44 p. m.</td>
+    <td>$ 10.000</td>
+    <td>3.32</td>
+    <td>$ 33.200</td>
+    <td class="profit">Pendiente</td>
+    <td class="legs">Kalmar FF @ 1.51 · Kalmar FF vs Örgryte IS · Swedish Allsvenskan<br>IFK Göteborg @ 2.2 · IFK Göteborg vs AIK · Swedish Allsvenskan</td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>4/07/2026, 8:44 p. m.</td>
+    <td>$ 10.000</td>
+    <td>2.73</td>
+    <td>$ 27.300</td>
+    <td class="profit">Pendiente</td>
+    <td class="legs">Flamengo @ 1.43 · Chapecoense vs Flamengo · Brasileirão Serie A<br>Hammarby IF @ 1.91 · IF Elfsborg vs Hammarby IF · Swedish Allsvenskan</td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>4/07/2026, 8:44 p. m.</td>
+    <td>$ 10.000</td>
+    <td>2.92</td>
+    <td>$ 29.200</td>
+    <td class="profit">Pendiente</td>
+    <td class="legs">Corinthians @ 1.53 · Corinthians vs Remo · Brasileirão Serie A<br>Hammarby IF @ 1.91 · IF Elfsborg vs Hammarby IF · Swedish Allsvenskan</td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>4/07/2026, 8:44 p. m.</td>
+    <td>$ 10.000</td>
+    <td>2.88</td>
+    <td>$ 28.800</td>
+    <td class="profit">Pendiente</td>
+    <td class="legs">Kalmar FF @ 1.51 · Kalmar FF vs Örgryte IS · Swedish Allsvenskan<br>São Paulo @ 1.91 · São Paulo vs Athletico-PR · Brasileirão Serie A</td>
+  </tr></tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
