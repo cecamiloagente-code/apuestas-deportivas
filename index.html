@@ -35,6 +35,7 @@
     .pending { background:#fff5da; color:var(--amber); }
     .won { background:#e6f5ec; color:var(--green); }
     .lost { background:#fae8e6; color:var(--red); }
+    .void { background:#edf0ee; color:var(--muted); }
     .legs { color:var(--muted); line-height:1.5; }
     .profit { color:var(--green); font-weight:900; }
     .loss { color:var(--red); font-weight:900; }
@@ -50,27 +51,28 @@
         <div class="meta">Simulación sin dinero real · ligas activas sin Mundial</div>
         <h1>Combinadas</h1>
       </div>
-      <div class="meta">Actualizado: 23/07/2026, 5:38 p. m.</div>
+      <div class="meta">Actualizado: 23/07/2026, 6:11 p. m.</div>
     </header>
     <section class="grid">
       <article class="card wide"><span>Banca inicial</span><strong>$ 1.000.000</strong></article>
-      <article class="card wide"><span>Banca disponible</span><strong>$ 928.800</strong></article>
+      <article class="card wide"><span>Banca disponible</span><strong>$ 978.800</strong></article>
       <article class="card wide"><span>Banca con pendientes</span><strong>$ 1.008.800</strong></article>
       <article class="card wide"><span>Ganancia/Pérdida</span><strong>$ 8.800</strong></article>
       <article class="card wide"><span>Objetivo 10x</span><strong>$ 10.000.000</strong></article>
-      <article class="card wide"><span>Falta para 10x</span><strong>$ 9.071.200</strong></article>
-      <article class="card "><span>Crecimiento diario req.</span><strong>1.33%</strong></article>
+      <article class="card wide"><span>Falta para 10x</span><strong>$ 8.991.200</strong></article>
+      <article class="card "><span>Crecimiento diario req.</span><strong>1.28%</strong></article>
       <article class="card "><span>Apostado</span><strong>$ 100.000</strong></article>
-      <article class="card "><span>Exposición pendiente</span><strong>$ 80.000</strong></article>
-      <article class="card "><span>ROI</span><strong>8.8%</strong></article>
+      <article class="card "><span>Exposición pendiente</span><strong>$ 30.000</strong></article>
+      <article class="card "><span>ROI liquidado</span><strong>44.0%</strong></article>
       <article class="card "><span>Combinadas</span><strong>10</strong></article>
       <article class="card "><span>Ganadas</span><strong>1</strong></article>
       <article class="card "><span>Perdidas</span><strong>1</strong></article>
+      <article class="card "><span>Anuladas</span><strong>5</strong></article>
     </section>
     <section class="note">
-      <div><strong>Modelo:</strong> Sin cambios hoy. Versión sim-v1.</div>
+      <div><strong>Modelo:</strong> Cambió hoy: Se reemplazó la probabilidad derivada únicamente de cuotas por un modelo de fortaleza por liga combinado con el mercado; ahora exige valor esperado positivo, mercados 1X2 completos y límites agregados de riesgo.</div>
       <div><strong>Meta:</strong> multiplicar la banca por 10 hasta $ 10.000.000. Sin suficientes combinadas liquidadas para una proyección confiable.</div>
-      <div><strong>Regla actual:</strong> combinadas de 2 selecciones, mercado 1X2, stake 1% bankroll capped at 10000 COP.</div>
+      <div><strong>Regla actual:</strong> combinadas de 2 selecciones, mercado 1X2, stake 1% de banca disponible, máximo 10000 COP; exposición diaria 4%, pendiente 10%, por selección 1% y por equipo 2%..</div>
     </section>
     <div class="table-wrap">
       <table>
@@ -78,12 +80,12 @@
           <tr><th>Estado</th><th>Fecha</th><th>Stake</th><th>Cuota</th><th>Retorno Pot.</th><th>Resultado</th><th>Selecciones</th></tr>
         </thead>
         <tbody><tr>
-    <td><span class="status pending">Pendiente</span></td>
+    <td><span class="status void">Anulada</span></td>
     <td>23/07/2026, 5:27 p. m.</td>
     <td>$ 10.000</td>
     <td>2.64</td>
     <td>$ 26.400</td>
-    <td class="profit">Pendiente</td>
+    <td class="">$ 0</td>
     <td class="legs"><div class="bet-slip">
     <div class="match-title">Botafogo vs Vitória</div>
     <div class="market-grid">
@@ -126,12 +128,12 @@
     <div class="match-line">Norwegian Eliteserien · Selección: Visitante · Cuota: 1.49</div>
   </div></td>
   </tr><tr>
-    <td><span class="status pending">Pendiente</span></td>
+    <td><span class="status void">Anulada</span></td>
     <td>23/07/2026, 5:27 p. m.</td>
     <td>$ 10.000</td>
     <td>2.67</td>
     <td>$ 26.700</td>
-    <td class="profit">Pendiente</td>
+    <td class="">$ 0</td>
     <td class="legs"><div class="bet-slip">
     <div class="match-title">Botafogo vs Vitória</div>
     <div class="market-grid">
@@ -174,12 +176,12 @@
     <div class="match-line">Brasileirão Serie A · Selección: Local · Cuota: 1.51</div>
   </div></td>
   </tr><tr>
-    <td><span class="status pending">Pendiente</span></td>
+    <td><span class="status void">Anulada</span></td>
     <td>23/07/2026, 5:27 p. m.</td>
     <td>$ 10.000</td>
     <td>2.6</td>
     <td>$ 26.000</td>
-    <td class="profit">Pendiente</td>
+    <td class="">$ 0</td>
     <td class="legs"><div class="bet-slip">
     <div class="match-title">Botafogo vs Vitória</div>
     <div class="market-grid">
@@ -222,12 +224,12 @@
     <div class="match-line">Swedish Allsvenskan · Selección: Local · Cuota: 1.47</div>
   </div></td>
   </tr><tr>
-    <td><span class="status pending">Pendiente</span></td>
+    <td><span class="status void">Anulada</span></td>
     <td>23/07/2026, 5:27 p. m.</td>
     <td>$ 10.000</td>
     <td>2.89</td>
     <td>$ 28.900</td>
-    <td class="profit">Pendiente</td>
+    <td class="">$ 0</td>
     <td class="legs"><div class="bet-slip">
     <div class="match-title">Botafogo vs Vitória</div>
     <div class="market-grid">
@@ -270,12 +272,12 @@
     <div class="match-line">Liga MX · Selección: Visitante · Cuota: 1.63</div>
   </div></td>
   </tr><tr>
-    <td><span class="status pending">Pendiente</span></td>
+    <td><span class="status void">Anulada</span></td>
     <td>23/07/2026, 5:27 p. m.</td>
     <td>$ 10.000</td>
     <td>2.76</td>
     <td>$ 27.599</td>
-    <td class="profit">Pendiente</td>
+    <td class="">$ 0</td>
     <td class="legs"><div class="bet-slip">
     <div class="match-title">Botafogo vs Vitória</div>
     <div class="market-grid">
@@ -419,7 +421,7 @@
     <td>$ 10.000</td>
     <td>2.73</td>
     <td>$ 27.300</td>
-    <td class="profit">Pendiente</td>
+    <td class="">Pendiente</td>
     <td class="legs"><div class="bet-slip">
     <div class="match-title">Chapecoense vs Flamengo</div>
     <div class="market-grid">
@@ -467,7 +469,7 @@
     <td>$ 10.000</td>
     <td>2.92</td>
     <td>$ 29.200</td>
-    <td class="profit">Pendiente</td>
+    <td class="">Pendiente</td>
     <td class="legs"><div class="bet-slip">
     <div class="match-title">Corinthians vs Remo</div>
     <div class="market-grid">
@@ -515,7 +517,7 @@
     <td>$ 10.000</td>
     <td>2.88</td>
     <td>$ 28.800</td>
-    <td class="profit">Pendiente</td>
+    <td class="">Pendiente</td>
     <td class="legs"><div class="bet-slip">
     <div class="match-title">Kalmar FF vs Örgryte IS</div>
     <div class="market-grid">
