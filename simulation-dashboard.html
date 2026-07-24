@@ -3,81 +3,225 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Simulación de Combinadas</title>
+  <link rel="icon" href="data:,">
+  <title>Simulación de combinadas</title>
   <style>
-    :root { color-scheme: light; --bg:#f5f7f3; --ink:#17211b; --muted:#657269; --panel:#fff; --line:#dfe7df; --green:#19764a; --red:#b33a35; --amber:#a46613; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--bg); color:var(--ink); }
-    main { width:min(1180px, calc(100% - 28px)); margin:0 auto; padding:28px 0 44px; }
-    header { display:flex; justify-content:space-between; gap:20px; align-items:end; margin-bottom:18px; }
-    h1 { margin:0; font-size:clamp(2rem, 5vw, 4rem); line-height:1; letter-spacing:0; }
-    .meta { color:var(--muted); font-weight:700; }
-    .grid { display:grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap:12px; margin-bottom:18px; }
-    .card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; box-shadow:0 10px 28px rgba(23,33,27,.07); }
-    .card span { display:block; color:var(--muted); font-size:.82rem; font-weight:800; }
-    .card strong { display:block; margin-top:8px; font-size:1.35rem; }
-    .wide { grid-column: span 2; }
-    table { width:100%; border-collapse:collapse; background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
-    th, td { padding:12px 10px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; font-size:.92rem; }
-    th { color:var(--muted); font-size:.75rem; text-transform:uppercase; }
-    .status { display:inline-block; padding:4px 9px; border-radius:999px; font-weight:900; font-size:.78rem; }
+    :root {
+      color-scheme: light;
+      --bg:#f4f6f3;
+      --ink:#17211b;
+      --muted:#657269;
+      --panel:#ffffff;
+      --line:#dce4dc;
+      --green:#187448;
+      --green-soft:#e7f4eb;
+      --blue:#2b5f8a;
+      --blue-soft:#eaf1f7;
+      --red:#b33a35;
+      --red-soft:#fae8e6;
+      --amber:#9a650f;
+      --amber-soft:#fff3d3;
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+    }
+    button { font:inherit; }
+    main { width:min(1240px, calc(100% - 28px)); margin:0 auto; padding:24px 0 44px; }
+    header { display:flex; justify-content:space-between; align-items:end; gap:20px; margin-bottom:20px; }
+    h1 { margin:3px 0 0; font-size:2.2rem; line-height:1.05; letter-spacing:0; }
+    h2 { margin:0 0 12px; font-size:1.15rem; letter-spacing:0; }
+    .eyebrow, .meta { color:var(--muted); font-size:.82rem; font-weight:800; }
+    .strategy-grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:14px; margin-bottom:18px; }
+    .strategy-card {
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:8px;
+      padding:18px;
+      box-shadow:0 8px 24px rgba(23,33,27,.06);
+    }
+    .strategy-card.challenger { border-color:#a8c4da; box-shadow:inset 4px 0 0 var(--blue), 0 8px 24px rgba(23,33,27,.06); }
+    .strategy-head { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:14px; }
+    .strategy-head h2 { margin:0; }
+    .badge { display:inline-block; padding:4px 8px; border-radius:999px; font-size:.72rem; font-weight:900; }
+    .badge.control { color:var(--green); background:var(--green-soft); }
+    .badge.experimental { color:var(--blue); background:var(--blue-soft); }
+    .strategy-metrics { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:12px; }
+    .strategy-metrics span, .requirement span { display:block; color:var(--muted); font-size:.74rem; font-weight:800; }
+    .strategy-metrics strong, .requirement strong { display:block; margin-top:4px; font-size:1.12rem; }
+    .progress { height:8px; margin:16px 0 8px; overflow:hidden; border-radius:4px; background:#edf1ed; }
+    .progress > div { height:100%; background:var(--green); }
+    .challenger .progress > div { background:var(--blue); }
+    .progress-copy { display:flex; justify-content:space-between; gap:12px; color:var(--muted); font-size:.77rem; font-weight:800; }
+    .requirement {
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0, 1fr));
+      gap:14px;
+      padding:16px 0;
+      margin-bottom:18px;
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+    .notes { display:grid; grid-template-columns:1.15fr .85fr; gap:14px; margin-bottom:18px; }
+    .note { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; color:var(--muted); line-height:1.5; }
+    .note strong { color:var(--ink); }
+    .warning { background:var(--amber-soft); border-color:#ead49b; color:#76500e; }
+    .tabs { display:flex; gap:4px; margin-bottom:10px; border-bottom:1px solid var(--line); }
+    .tab {
+      border:0;
+      border-bottom:3px solid transparent;
+      padding:10px 12px;
+      background:transparent;
+      color:var(--muted);
+      font-weight:900;
+      cursor:pointer;
+    }
+    .tab[aria-selected="true"] { color:var(--ink); border-bottom-color:var(--blue); }
+    .portfolio[hidden] { display:none; }
+    .portfolio-head { display:flex; justify-content:space-between; gap:16px; align-items:end; margin:14px 0 10px; }
+    .portfolio-head h2 { margin:0; }
+    .portfolio-stats { color:var(--muted); font-size:.82rem; font-weight:800; text-align:right; }
+    .table-wrap { overflow-x:auto; }
+    table { width:100%; min-width:980px; border-collapse:collapse; background:var(--panel); border:1px solid var(--line); }
+    th, td { padding:12px 10px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; font-size:.9rem; }
+    th { color:var(--muted); font-size:.72rem; text-transform:uppercase; }
+    .status { display:inline-block; padding:4px 8px; border-radius:999px; font-weight:900; font-size:.74rem; }
+    .pending { background:var(--amber-soft); color:var(--amber); }
+    .won { background:var(--green-soft); color:var(--green); }
+    .lost { background:var(--red-soft); color:var(--red); }
+    .void { background:#edf0ee; color:var(--muted); }
+    .profit { color:var(--green); font-weight:900; }
+    .loss { color:var(--red); font-weight:900; }
+    .legs { color:var(--muted); line-height:1.5; }
     .bet-slip { display:grid; gap:8px; margin:0 0 12px; padding-bottom:12px; border-bottom:1px solid var(--line); }
     .bet-slip:last-child { margin-bottom:0; padding-bottom:0; border-bottom:0; }
     .match-title { color:var(--ink); font-weight:900; }
     .market-grid { display:grid; grid-template-columns:repeat(3, minmax(120px, 1fr)); gap:8px; }
-    .market-option { min-height:48px; display:flex; flex-direction:column; justify-content:center; gap:2px; padding:8px 10px; border:1px solid var(--line); border-radius:6px; background:#f8faf7; color:var(--muted); }
-    .market-option strong { color:var(--ink); font-size:.86rem; }
-    .market-option span { font-size:.74rem; font-weight:800; text-transform:uppercase; }
-    .market-option.selected { border-color:var(--green); background:#e7f5ec; box-shadow:inset 0 0 0 1px var(--green); }
+    .market-option {
+      min-height:50px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:2px;
+      padding:8px 10px;
+      border:1px solid var(--line);
+      border-radius:6px;
+      background:#f8faf7;
+      color:var(--muted);
+    }
+    .market-option strong { color:var(--ink); font-size:.84rem; }
+    .market-option span { font-size:.7rem; font-weight:800; text-transform:uppercase; }
+    .market-option.selected { border-color:var(--green); background:var(--green-soft); box-shadow:inset 0 0 0 1px var(--green); }
     .market-option.selected strong, .market-option.selected .odds { color:var(--green); }
     .odds { font-weight:1000; }
-    .match-line { color:var(--muted); font-size:.8rem; }
-    .pending { background:#fff5da; color:var(--amber); }
-    .won { background:#e6f5ec; color:var(--green); }
-    .lost { background:#fae8e6; color:var(--red); }
-    .void { background:#edf0ee; color:var(--muted); }
-    .legs { color:var(--muted); line-height:1.5; }
-    .profit { color:var(--green); font-weight:900; }
-    .loss { color:var(--red); font-weight:900; }
-    .note { background:#fff; border:1px solid var(--line); border-radius:8px; padding:16px; margin-bottom:18px; color:var(--muted); line-height:1.55; }
-    .note strong { color:var(--ink); }
-    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } .wide { grid-column: span 1; } header { display:block; } table { min-width:900px; } .table-wrap { overflow-x:auto; } }
+    .match-line { color:var(--muted); font-size:.78rem; }
+    @media (max-width:900px) {
+      header { display:block; }
+      .meta { margin-top:8px; }
+      .strategy-grid, .notes { grid-template-columns:1fr; }
+      .requirement { grid-template-columns:repeat(2, minmax(0, 1fr)); }
+      .strategy-metrics { grid-template-columns:repeat(2, minmax(0, 1fr)); }
+      .portfolio-head { display:block; }
+      .portfolio-stats { margin-top:5px; text-align:left; }
+    }
+    @media (max-width:520px) {
+      h1 { font-size:1.75rem; }
+      .strategy-metrics, .requirement { grid-template-columns:1fr 1fr; }
+      .tab { flex:1; padding:10px 6px; font-size:.82rem; }
+    }
   </style>
 </head>
 <body>
   <main>
     <header>
       <div>
-        <div class="meta">Simulación sin dinero real · ligas activas sin Mundial</div>
-        <h1>Combinadas</h1>
+        <div class="eyebrow">Simulación sin dinero real · ligas activas sin Mundial</div>
+        <h1>Combinadas deportivas</h1>
       </div>
-      <div class="meta">Actualizado: 24/07/2026, 8:30 a. m.</div>
+      <div class="meta">Actualizado: 24/07/2026, 2:38 p. m.</div>
     </header>
-    <section class="grid">
-      <article class="card wide"><span>Banca inicial</span><strong>$ 1.000.000</strong></article>
-      <article class="card wide"><span>Banca disponible</span><strong>$ 966.880</strong></article>
-      <article class="card wide"><span>Banca con pendientes</span><strong>$ 1.028.000</strong></article>
-      <article class="card wide"><span>Ganancia/Pérdida</span><strong>$ 28.000</strong></article>
-      <article class="card wide"><span>Objetivo 10x</span><strong>$ 10.000.000</strong></article>
-      <article class="card wide"><span>Falta para 10x</span><strong>$ 8.972.000</strong></article>
-      <article class="card "><span>Crecimiento diario req.</span><strong>1.27%</strong></article>
-      <article class="card "><span>Apostado</span><strong>$ 141.120</strong></article>
-      <article class="card "><span>Exposición pendiente</span><strong>$ 61.120</strong></article>
-      <article class="card "><span>ROI liquidado</span><strong>93.3%</strong></article>
-      <article class="card "><span>Combinadas</span><strong>15</strong></article>
-      <article class="card "><span>Ganadas</span><strong>2</strong></article>
-      <article class="card "><span>Perdidas</span><strong>1</strong></article>
-      <article class="card "><span>Anuladas</span><strong>5</strong></article>
+
+    <section class="strategy-grid" aria-label="Comparación de estrategias">
+      <article class="strategy-card ">
+    <div class="strategy-head">
+      <h2>Control 10x</h2>
+      <span class="badge control">Control</span>
+    </div>
+    <div class="strategy-metrics">
+      <div><span>Disponible</span><strong>$ 966.880</strong></div>
+      <div><span>Patrimonio</span><strong>$ 1.028.000</strong></div>
+      <div><span>Ganancia/Pérdida</span><strong>+$ 28.000</strong></div>
+      <div><span>Pendiente</span><strong>$ 61.120</strong></div>
+      <div><span>ROI liquidado</span><strong>93.3%</strong></div>
+      <div><span>Liquidaciones</span><strong>3</strong></div>
+      <div><span>Drawdown actual</span><strong>0.0%</strong></div>
+      <div><span>Pausa automática</span><strong>20%</strong></div>
+    </div>
+    <div class="progress" aria-label="Progreso al objetivo"><div style="width:10.28%"></div></div>
+    <div class="progress-copy">
+      <span>10.3% del objetivo</span>
+      <span>$ 1.028.000 / $ 10.000.000</span>
+    </div>
+  </article><article class="strategy-card challenger">
+    <div class="strategy-head">
+      <h2>Desafío 5x</h2>
+      <span class="badge experimental">Experimental</span>
+    </div>
+    <div class="strategy-metrics">
+      <div><span>Disponible</span><strong>$ 951.114</strong></div>
+      <div><span>Patrimonio</span><strong>$ 1.000.000</strong></div>
+      <div><span>Ganancia/Pérdida</span><strong>$ 0</strong></div>
+      <div><span>Pendiente</span><strong>$ 48.886</strong></div>
+      <div><span>ROI liquidado</span><strong>0.0%</strong></div>
+      <div><span>Liquidaciones</span><strong>0</strong></div>
+      <div><span>Drawdown actual</span><strong>0.0%</strong></div>
+      <div><span>Pausa automática</span><strong>15%</strong></div>
+    </div>
+    <div class="progress" aria-label="Progreso al objetivo"><div style="width:20.00%"></div></div>
+    <div class="progress-copy">
+      <span>20.0% del objetivo</span>
+      <span>$ 1.000.000 / $ 5.000.000</span>
+    </div>
+  </article>
     </section>
-    <section class="note">
-      <div><strong>Modelo:</strong> Sin cambios hoy. Versión sim-v2.</div>
-      <div><strong>Meta:</strong> multiplicar la banca por 10 hasta $ 10.000.000. Sin suficientes combinadas liquidadas para una proyección confiable.</div>
-      <div><strong>Regla actual:</strong> combinadas de 2 selecciones, mercado 1X2, stake 1% de banca disponible, máximo 10000 COP; exposición diaria 4%, pendiente 10%, por selección 1% y por equipo 2%..</div>
+
+    <section class="requirement" aria-label="Requisitos del desafío 5x">
+    <div><span>Meta</span><strong>5x en 180 días</strong></div>
+    <div><span>Crecimiento diario</span><strong>0.90%</strong></div>
+    <div><span>Exposición de hoy</span><strong>4.89% · $ 48.886</strong></div>
+    <div><span>ROI requerido hoy</span><strong>18.4%</strong></div>
+    <div><span>ROI teórico de hoy</span><strong>20.8% · no validado</strong></div>
+    <div><span>Límite diario</span><strong>6% · exigiría 15.0% ROI</strong></div>
+  </section>
+
+    <section class="notes">
+      <div class="note">
+        <div><strong>Modelo:</strong> Sin cambios hoy. Versión sim-v2.</div>
+        <div><strong>Calibración histórica:</strong> Brier 0.666 · Log loss 1.140 · 1607 predicciones.</div>
+        <div><strong>Cuotas históricas utilizables:</strong> 0%. El ROI histórico del modelo todavía no está validado.</div>
+      </div>
+      <div class="note warning">
+        <strong>Condición de la meta 5x:</strong> el desafío necesita un ROI sostenido cercano al mostrado abajo y suficiente volumen independiente. El ROI de pocas apuestas liquidadas no demuestra esa ventaja.
+      </div>
     </section>
+
+    <div class="tabs" role="tablist" aria-label="Cartera visible">
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="portfolio-baseline" data-profile="baseline">Control</button>
+      <button class="tab" type="button" role="tab" aria-selected="true" aria-controls="portfolio-accelerated" data-profile="accelerated">Desafío 5x</button>
+    </div>
+
+    <section id="portfolio-baseline" class="portfolio" data-profile="baseline" hidden>
+    <div class="portfolio-head">
+      <h2>Control 10x</h2>
+      <div class="portfolio-stats">1.00% por combinado · máximo 4% diario · cuota combinada hasta 4.5 · 7 pendientes · 5 anuladas</div>
+    </div>
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>Estado</th><th>Fecha</th><th>Stake</th><th>Cuota</th><th>Retorno Pot.</th><th>Resultado</th><th>Selecciones</th></tr>
+          <tr><th>Estado</th><th>Fecha</th><th>Stake</th><th>Cuota</th><th>Retorno potencial</th><th>Resultado</th><th>Selecciones</th></tr>
         </thead>
         <tbody><tr>
     <td><span class="status pending">Pendiente</span></td>
@@ -802,6 +946,511 @@
   </tr></tbody>
       </table>
     </div>
+  </section><section id="portfolio-accelerated" class="portfolio" data-profile="accelerated" >
+    <div class="portfolio-head">
+      <h2>Desafío 5x</h2>
+      <div class="portfolio-stats">0.50% por combinado · máximo 6% diario · cuota combinada hasta 3.5 · 10 pendientes · 0 anuladas</div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Estado</th><th>Fecha</th><th>Stake</th><th>Cuota</th><th>Retorno potencial</th><th>Resultado</th><th>Selecciones</th></tr>
+        </thead>
+        <tbody><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>24/07/2026, 2:38 p. m.</td>
+    <td>$ 5.000</td>
+    <td>3.13</td>
+    <td>$ 15.650</td>
+    <td class="">Pendiente</td>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">Orlando City SC vs Nashville SC</div>
+    <div class="market-grid">
+      <div class="market-option ">
+    <span>Local</span>
+    <strong>Orlando City SC</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option selected">
+    <span>Visitante</span>
+    <strong>Nashville SC</strong>
+    <div class="odds">2.1</div>
+  </div>
+    </div>
+    <div class="match-line">MLS · Selección: Visitante · Cuota: 2.1</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">Aalesund vs Viking FK</div>
+    <div class="market-grid">
+      <div class="market-option ">
+    <span>Local</span>
+    <strong>Aalesund</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option selected">
+    <span>Visitante</span>
+    <strong>Viking FK</strong>
+    <div class="odds">1.49</div>
+  </div>
+    </div>
+    <div class="match-line">Norwegian Eliteserien · Selección: Visitante · Cuota: 1.49</div>
+  </div></td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>24/07/2026, 2:38 p. m.</td>
+    <td>$ 4.975</td>
+    <td>3.38</td>
+    <td>$ 16.815</td>
+    <td class="">Pendiente</td>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">New England Revolution vs Atlanta United FC</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>New England Revolution</strong>
+    <div class="odds">2.05</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>Atlanta United FC</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">MLS · Selección: Local · Cuota: 2.05</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">Palmeiras vs Atlético-MG</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Palmeiras</strong>
+    <div class="odds">1.65</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>Atlético-MG</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Brasileirão Serie A · Selección: Local · Cuota: 1.65</div>
+  </div></td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>24/07/2026, 2:38 p. m.</td>
+    <td>$ 4.950</td>
+    <td>3.48</td>
+    <td>$ 17.226</td>
+    <td class="">Pendiente</td>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">Athletico-PR vs Internacional</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Athletico-PR</strong>
+    <div class="odds">2</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>Internacional</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Brasileirão Serie A · Selección: Local · Cuota: 2</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">Degerfors IF vs Djurgården</div>
+    <div class="market-grid">
+      <div class="market-option ">
+    <span>Local</span>
+    <strong>Degerfors IF</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option selected">
+    <span>Visitante</span>
+    <strong>Djurgården</strong>
+    <div class="odds">1.74</div>
+  </div>
+    </div>
+    <div class="match-line">Swedish Allsvenskan · Selección: Visitante · Cuota: 1.74</div>
+  </div></td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>24/07/2026, 2:38 p. m.</td>
+    <td>$ 4.925</td>
+    <td>3.17</td>
+    <td>$ 15.612</td>
+    <td class="">Pendiente</td>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">Kristiansund BK vs IK Start</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Kristiansund BK</strong>
+    <div class="odds">2.2</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>IK Start</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Norwegian Eliteserien · Selección: Local · Cuota: 2.2</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">IK Sirius vs IFK Göteborg</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>IK Sirius</strong>
+    <div class="odds">1.44</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>IFK Göteborg</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Swedish Allsvenskan · Selección: Local · Cuota: 1.44</div>
+  </div></td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>24/07/2026, 2:38 p. m.</td>
+    <td>$ 4.900</td>
+    <td>3.3</td>
+    <td>$ 16.170</td>
+    <td class="">Pendiente</td>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">CF Montréal vs Inter Miami CF</div>
+    <div class="market-grid">
+      <div class="market-option ">
+    <span>Local</span>
+    <strong>CF Montréal</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option selected">
+    <span>Visitante</span>
+    <strong>Inter Miami CF</strong>
+    <div class="odds">2.1</div>
+  </div>
+    </div>
+    <div class="match-line">MLS · Selección: Visitante · Cuota: 2.1</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">Pachuca vs Querétaro</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Pachuca</strong>
+    <div class="odds">1.57</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>Querétaro</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Liga MX · Selección: Local · Cuota: 1.57</div>
+  </div></td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>24/07/2026, 2:38 p. m.</td>
+    <td>$ 4.876</td>
+    <td>3.42</td>
+    <td>$ 16.675</td>
+    <td class="">Pendiente</td>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">Minnesota United FC vs Vancouver Whitecaps</div>
+    <div class="market-grid">
+      <div class="market-option ">
+    <span>Local</span>
+    <strong>Minnesota United FC</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option selected">
+    <span>Visitante</span>
+    <strong>Vancouver Whitecaps</strong>
+    <div class="odds">1.87</div>
+  </div>
+    </div>
+    <div class="match-line">MLS · Selección: Visitante · Cuota: 1.87</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">San Jose Earthquakes vs LA Galaxy</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>San Jose Earthquakes</strong>
+    <div class="odds">1.83</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>LA Galaxy</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">MLS · Selección: Local · Cuota: 1.83</div>
+  </div></td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>24/07/2026, 2:38 p. m.</td>
+    <td>$ 4.851</td>
+    <td>3.27</td>
+    <td>$ 15.862</td>
+    <td class="">Pendiente</td>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">Tijuana vs León</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Tijuana</strong>
+    <div class="odds">1.91</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>León</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Liga MX · Selección: Local · Cuota: 1.91</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">Houston Dynamo FC vs Austin FC</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Houston Dynamo FC</strong>
+    <div class="odds">1.71</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>Austin FC</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">MLS · Selección: Local · Cuota: 1.71</div>
+  </div></td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>24/07/2026, 2:38 p. m.</td>
+    <td>$ 4.827</td>
+    <td>2.75</td>
+    <td>$ 13.274</td>
+    <td class="">Pendiente</td>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">Malmö FF vs IF Elfsborg</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Malmö FF</strong>
+    <div class="odds">1.87</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>IF Elfsborg</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Swedish Allsvenskan · Selección: Local · Cuota: 1.87</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">Flamengo vs São Paulo</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Flamengo</strong>
+    <div class="odds">1.47</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>São Paulo</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">Brasileirão Serie A · Selección: Local · Cuota: 1.47</div>
+  </div></td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>24/07/2026, 2:38 p. m.</td>
+    <td>$ 4.803</td>
+    <td>2.95</td>
+    <td>$ 14.168</td>
+    <td class="">Pendiente</td>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">KFUM Oslo vs Molde</div>
+    <div class="market-grid">
+      <div class="market-option ">
+    <span>Local</span>
+    <strong>KFUM Oslo</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option selected">
+    <span>Visitante</span>
+    <strong>Molde</strong>
+    <div class="odds">2.15</div>
+  </div>
+    </div>
+    <div class="match-line">Norwegian Eliteserien · Selección: Visitante · Cuota: 2.15</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">Sandefjord vs Bodo/Glimt</div>
+    <div class="market-grid">
+      <div class="market-option ">
+    <span>Local</span>
+    <strong>Sandefjord</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option selected">
+    <span>Visitante</span>
+    <strong>Bodo/Glimt</strong>
+    <div class="odds">1.37</div>
+  </div>
+    </div>
+    <div class="match-line">Norwegian Eliteserien · Selección: Visitante · Cuota: 1.37</div>
+  </div></td>
+  </tr><tr>
+    <td><span class="status pending">Pendiente</span></td>
+    <td>24/07/2026, 2:38 p. m.</td>
+    <td>$ 4.779</td>
+    <td>2.79</td>
+    <td>$ 13.333</td>
+    <td class="">Pendiente</td>
+    <td class="legs"><div class="bet-slip">
+    <div class="match-title">St. Louis CITY SC vs Colorado Rapids</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>St. Louis CITY SC</strong>
+    <div class="odds">1.95</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>Colorado Rapids</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">MLS · Selección: Local · Cuota: 1.95</div>
+  </div><br><div class="bet-slip">
+    <div class="match-title">Angel City FC vs Racing Louisville FC</div>
+    <div class="market-grid">
+      <div class="market-option selected">
+    <span>Local</span>
+    <strong>Angel City FC</strong>
+    <div class="odds">1.43</div>
+  </div>
+      <div class="market-option ">
+    <span>Empate</span>
+    <strong>Empate</strong>
+    <div class="odds">-</div>
+  </div>
+      <div class="market-option ">
+    <span>Visitante</span>
+    <strong>Racing Louisville FC</strong>
+    <div class="odds">-</div>
+  </div>
+    </div>
+    <div class="match-line">NWSL · Selección: Local · Cuota: 1.43</div>
+  </div></td>
+  </tr></tbody>
+      </table>
+    </div>
+  </section>
   </main>
+  <script>
+    const tabs = document.querySelectorAll("[data-profile]");
+    const portfolios = document.querySelectorAll(".portfolio");
+    for (const tab of tabs) {
+      tab.addEventListener("click", () => {
+        const profile = tab.dataset.profile;
+        for (const item of tabs) item.setAttribute("aria-selected", String(item === tab));
+        for (const portfolio of portfolios) portfolio.hidden = portfolio.dataset.profile !== profile;
+      });
+    }
+  </script>
 </body>
 </html>
