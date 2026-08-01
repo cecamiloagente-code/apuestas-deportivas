@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Histórico de combinadas</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      --bg: #f3f5f2;
+      --surface: #ffffff;
+      --ink: #17211b;
+      --muted: #627168;
+      --line: #d5ddd7;
+      --green: #087735;
+      --green-dark: #075a2a;
+      --green-soft: #e7f5eb;
+      --lime: #d7f34a;
+      --blue: #145d73;
+      --blue-soft: #e8f3f6;
+      --amber: #925000;
+      --amber-soft: #fff3d6;
+      --red: #b42318;
+      --red-soft: #fff0ee;
+      --shadow: 0 8px 24px rgba(23, 33, 27, 0.07);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+    button, select { font: inherit; letter-spacing: 0; }
+    a { color: inherit; }
+    [hidden] { display: none !important; }
+    .topbar { color: #fff; background: #14231a; border-bottom: 4px solid var(--lime); }
+    .topbar-inner, main { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    .topbar-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 14px 0; }
+    .brand strong { display: block; font-size: 22px; }
+    .brand span { display: block; margin-top: 4px; color: #c7d3cb; font-size: 13px; }
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; }
+    .nav a { padding: 8px 10px; border: 1px solid #526159; border-radius: 4px; color: #fff; font-size: 13px; font-weight: 700; text-decoration: none; }
+    .nav a:hover { border-color: var(--lime); }
+    main { padding: 28px 0 56px; }
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(240px, 1fr) minmax(210px, 280px) auto;
+      gap: 16px;
+      align-items: end;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .toolbar h1 { margin: 0; font-size: 28px; line-height: 1.2; }
+    .toolbar p { margin: 7px 0 0; color: var(--muted); line-height: 1.4; }
+    .date-field { display: grid; gap: 6px; }
+    .date-field label { color: var(--muted); font-size: 12px; font-weight: 800; text-transform: uppercase; }
+    .date-field select { width: 100%; height: 44px; padding: 0 12px; border: 1px solid #aebbb2; border-radius: 4px; color: var(--ink); background: #fff; }
+    .download {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 16px;
+      border-radius: 4px;
+      color: #fff;
+      background: var(--blue);
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .download:hover { background: #0f4a5c; }
+    .metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin-top: 16px; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--line); }
+    .metric { padding: 16px 18px; background: var(--surface); }
+    .metric span { display: block; color: var(--muted); font-size: 11px; font-weight: 800; text-transform: uppercase; }
+    .metric strong { display: block; margin-top: 5px; font-size: 21px; }
+    .section-title { display: flex; justify-content: space-between; gap: 20px; align-items: end; margin: 28px 0 12px; }
+    .section-title h2 { margin: 0; font-size: 21px; }
+    .section-title p { margin: 0; color: var(--muted); font-size: 12px; }
+    .records { display: grid; gap: 16px; }
+    .record { overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); }
+    .record-header { display: grid; grid-template-columns: minmax(0, 1fr) repeat(3, minmax(130px, auto)); gap: 18px; align-items: center; padding: 16px 18px; border-bottom: 1px solid var(--line); }
+    .record-title { min-width: 0; }
+    .record-title h3 { margin: 0; font-size: 17px; overflow-wrap: anywhere; }
+    .record-title p { margin: 5px 0 0; color: var(--muted); font-size: 12px; }
+    .stat span { display: block; color: var(--muted); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+    .stat strong { display: block; margin-top: 4px; font-size: 16px; }
+    .status { display: inline-flex; width: fit-content; margin-top: 7px; padding: 4px 7px; border-radius: 3px; font-size: 11px; font-weight: 800; text-transform: uppercase; }
+    .status-pending { color: #704000; background: var(--amber-soft); }
+    .status-won { color: #084c24; background: var(--green-soft); }
+    .status-lost { color: #70160f; background: var(--red-soft); }
+    .status-void { color: #405047; background: #edf0ee; }
+    .leg { display: grid; grid-template-columns: 145px 145px minmax(240px, 1fr) minmax(210px, 0.8fr) 90px; gap: 14px; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--line); }
+    .leg:last-child { border-bottom: 0; }
+    .cell span { display: block; color: var(--muted); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+    .cell strong { display: block; margin-top: 4px; font-size: 13px; overflow-wrap: anywhere; }
+    .pick strong { color: var(--green-dark); }
+    .empty { padding: 32px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--muted); text-align: center; }
+    .footer { margin-top: 24px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+    @media (max-width: 860px) {
+      .toolbar { grid-template-columns: 1fr 1fr; }
+      .toolbar-intro { grid-column: 1 / -1; }
+      .record-header { grid-template-columns: minmax(0, 1fr) repeat(2, minmax(120px, auto)); }
+      .record-header .stat:last-child { display: none; }
+      .leg { grid-template-columns: 1fr 1fr; }
+      .leg .cell:nth-child(3), .leg .cell:nth-child(4) { grid-column: 1 / -1; }
+    }
+    @media (max-width: 600px) {
+      .topbar-inner, main { width: min(100% - 20px, 1120px); }
+      .topbar-inner { align-items: flex-start; flex-direction: column; }
+      .toolbar { grid-template-columns: 1fr; padding: 16px; }
+      .toolbar-intro { grid-column: auto; }
+      .toolbar h1 { font-size: 24px; }
+      .metrics { grid-template-columns: 1fr; }
+      .section-title { align-items: flex-start; flex-direction: column; gap: 5px; }
+      .record-header { grid-template-columns: 1fr 1fr; gap: 13px; }
+      .record-title { grid-column: 1 / -1; }
+      .record-header .stat:last-child { display: block; }
+      .leg { grid-template-columns: 1fr; padding: 14px 16px; }
+      .leg .cell:nth-child(3), .leg .cell:nth-child(4) { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><strong>Histórico de combinadas</strong><span>Archivo diario del perfil Alto retorno</span></div>
+      <nav class="nav" aria-label="Navegación"><a href="simulation-dashboard.html">Dashboard</a><a href="betplay-assistant.html">Asistente BetPlay</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="toolbar">
+      <div class="toolbar-intro"><h1>Combinadas por fecha</h1><p>Selecciona el día para consultar los cupones creados y descargar su CSV.</p></div>
+      <div class="date-field"><label for="date-filter">Fecha de creación</label><select id="date-filter"><option value="2026-08-01" selected>1 de agosto de 2026</option><option value="2026-07-31">31 de julio de 2026</option></select></div>
+      <a class="download" id="csv-download" href="data/combinados/2026-08/2026-08-01.csv" download>Descargar CSV</a>
+    </section>
+    <section class="metrics" aria-label="Resumen de la fecha">
+      <div class="metric"><span>Combinadas</span><strong id="metric-count">1</strong></div>
+      <div class="metric"><span>Total apostado</span><strong id="metric-stake">$ 4.950</strong></div>
+      <div class="metric"><span>Retorno potencial</span><strong id="metric-potential">$ 21.730</strong></div>
+    </section>
+    <div class="section-title"><h2 id="records-title">Combinadas del 1 de agosto de 2026</h2><p>Una tarjeta corresponde a un combinado</p></div>
+    <section class="records" id="records">
+    <article class="record" data-date="2026-08-01" data-stake="4950" data-potential="21730">
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1785591027981-3</h3><p>Creado 1/08/2026, 8:30 a. m.</p><span class="status status-pending">Pendiente</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.950</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.39</strong></div>
+        <div class="stat"><span>Retorno</span><strong>Pendiente</strong></div>
+      </header>
+      
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-02 15:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>Washington Spirit vs San Diego Wave FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Washington Spirit</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.35</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-09 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Bahia vs Vasco da Gama</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Bahia</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.87</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-07-31" data-stake="5000" data-potential="22400" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1785520614885-1</h3><p>Creado 31/07/2026, 12:56 p. m.</p><span class="status status-pending">Pendiente</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 5.000</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.48</strong></div>
+        <div class="stat"><span>Retorno</span><strong>Pendiente</strong></div>
+      </header>
+      
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-01 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>D.C. United vs Nashville SC</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Nashville SC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.30</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-02 10:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>Aalesund vs Tromso</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Tromso</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.95</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-07-31" data-stake="4975" data-potential="24626" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1785520614885-2</h3><p>Creado 31/07/2026, 12:56 p. m.</p><span class="status status-pending">Pendiente</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.975</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.95</strong></div>
+        <div class="stat"><span>Retorno</span><strong>Pendiente</strong></div>
+      </header>
+      
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-01 20:06</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>León vs Pachuca</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Pachuca</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-01 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Sporting Kansas City vs Houston Dynamo FC</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Houston Dynamo FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+    </article></section>
+    <div class="empty" id="empty" hidden><strong>No se crearon combinadas en esta fecha.</strong><br>El CSV contiene únicamente los encabezados.</div>
+    <p class="footer">Actualizado 1/08/2026, 6:07 p. m. Las cuotas son referencias de entrenamiento y los registros permanecen en simulación.</p>
+  </main>
+  <script>
+    const dateFilter = document.getElementById("date-filter");
+    const records = Array.from(document.querySelectorAll(".record"));
+    const money = new Intl.NumberFormat("es-CO", { style: "currency", currency: "COP", maximumFractionDigits: 0 });
+    dateFilter.addEventListener("change", updateDate);
+    updateDate();
+
+    function updateDate() {
+      const selected = dateFilter.value;
+      let count = 0;
+      let stake = 0;
+      let potential = 0;
+      for (const record of records) {
+        const visible = record.dataset.date === selected;
+        record.hidden = !visible;
+        if (!visible) continue;
+        count += 1;
+        stake += Number(record.dataset.stake || 0);
+        potential += Number(record.dataset.potential || 0);
+      }
+      document.getElementById("metric-count").textContent = String(count);
+      document.getElementById("metric-stake").textContent = money.format(stake);
+      document.getElementById("metric-potential").textContent = money.format(potential);
+      document.getElementById("records-title").textContent = "Combinadas del " + dateFilter.options[dateFilter.selectedIndex].text;
+      document.getElementById("empty").hidden = count > 0;
+      document.getElementById("csv-download").href = "data/combinados/" + selected.slice(0, 7) + "/" + selected + ".csv";
+    }
+  </script>
+</body>
+</html>
