@@ -1,2 +1,3 @@
-fecha,combinado_id,estado,monto_cop,cuota_referencia,retorno_potencial_cop,retorno_real_cop,selecciones
-2026-08-02,sim-1785668426633-4,pending,4925,4.10,20192,,1) 2026-08-02 10:00 | Norwegian Eliteserien | Aalesund vs Tromso | 1X2 VISITANTE: Tromso | cuota_ref 2.00 || 2) 2026-08-02 07:00 | Swedish Allsvenskan | IF Brommapojkarna vs Malmö FF | 1X2 VISITANTE: Malmö FF | cuota_ref 2.05
+fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
+2026-08-02,1,sim-1785668426633-4,1,pending,4925,4.10,20192,,2026-08-02 10:00,Norwegian Eliteserien,Aalesund,Tromso,1X2,VISITANTE,Tromso,2.00
+2026-08-02,1,sim-1785668426633-4,2,pending,4925,4.10,20192,,2026-08-02 07:00,Swedish Allsvenskan,IF Brommapojkarna,Malmö FF,1X2,VISITANTE,Malmö FF,2.05
