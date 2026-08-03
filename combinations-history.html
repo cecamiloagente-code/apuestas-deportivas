@@ -137,22 +137,22 @@
   <main>
     <section class="toolbar">
       <div class="toolbar-intro"><h1>Combinadas por fecha</h1><p>Selecciona el día para consultar los cupones creados y descargar su CSV.</p></div>
-      <div class="date-field"><label for="date-filter">Fecha de creación</label><select id="date-filter"><option value="2026-08-02" selected>2 de agosto de 2026</option><option value="2026-08-01">1 de agosto de 2026</option><option value="2026-07-31">31 de julio de 2026</option></select></div>
-      <a class="download" id="csv-download" href="data/combinados/2026-08/2026-08-02.csv" download>Descargar CSV</a>
+      <div class="date-field"><label for="date-filter">Fecha de creación</label><select id="date-filter"><option value="2026-08-03" selected>3 de agosto de 2026</option><option value="2026-08-02">2 de agosto de 2026</option><option value="2026-08-01">1 de agosto de 2026</option><option value="2026-07-31">31 de julio de 2026</option></select></div>
+      <a class="download" id="csv-download" href="data/combinados/2026-08/2026-08-03.csv" download>Descargar CSV</a>
     </section>
     <section class="metrics" aria-label="Resumen de la fecha">
-      <div class="metric"><span>Combinadas</span><strong id="metric-count">1</strong></div>
-      <div class="metric"><span>Total apostado</span><strong id="metric-stake">$ 4.925</strong></div>
-      <div class="metric"><span>Retorno potencial</span><strong id="metric-potential">$ 20.192</strong></div>
+      <div class="metric"><span>Combinadas</span><strong id="metric-count">0</strong></div>
+      <div class="metric"><span>Total apostado</span><strong id="metric-stake">$ 0</strong></div>
+      <div class="metric"><span>Retorno potencial</span><strong id="metric-potential">$ 0</strong></div>
     </section>
-    <div class="section-title"><h2 id="records-title">Combinadas del 2 de agosto de 2026</h2><p>Una tarjeta corresponde a un combinado</p></div>
+    <div class="section-title"><h2 id="records-title">Combinadas del 3 de agosto de 2026</h2><p>Una tarjeta corresponde a un combinado</p></div>
     <section class="records" id="records">
-    <article class="record" data-date="2026-08-02" data-stake="4925" data-potential="20192">
+    <article class="record" data-date="2026-08-02" data-stake="4925" data-potential="20192" hidden>
       <header class="record-header">
-        <div class="record-title"><h3>sim-1785668426633-4</h3><p>Creado 2/08/2026, 6:00 a. m.</p><span class="status status-pending">Pendiente</span></div>
+        <div class="record-title"><h3>sim-1785668426633-4</h3><p>Creado 2/08/2026, 6:00 a. m.</p><span class="status status-won">Ganada</span></div>
         <div class="stat"><span>Monto</span><strong>$ 4.925</strong></div>
         <div class="stat"><span>Cuota combinada</span><strong>4.10</strong></div>
-        <div class="stat"><span>Retorno</span><strong>Pendiente</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 20.192</strong></div>
       </header>
       <div class="leg">
         <div class="cell"><span>Hora Colombia</span><strong>2026-08-02 10:00</strong></div>
@@ -171,10 +171,10 @@
     </article>
     <article class="record" data-date="2026-08-01" data-stake="4950" data-potential="21730" hidden>
       <header class="record-header">
-        <div class="record-title"><h3>sim-1785591027981-3</h3><p>Creado 1/08/2026, 8:30 a. m.</p><span class="status status-pending">Pendiente</span></div>
+        <div class="record-title"><h3>sim-1785591027981-3</h3><p>Creado 1/08/2026, 8:30 a. m.</p><span class="status status-lost">Perdida</span></div>
         <div class="stat"><span>Monto</span><strong>$ 4.950</strong></div>
         <div class="stat"><span>Cuota combinada</span><strong>4.39</strong></div>
-        <div class="stat"><span>Retorno</span><strong>Pendiente</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
       </header>
       <div class="leg">
         <div class="cell"><span>Hora Colombia</span><strong>2026-08-02 15:00</strong></div>
@@ -235,8 +235,8 @@
         <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
       </div>
     </article></section>
-    <div class="empty" id="empty" hidden><strong>No se crearon combinadas en esta fecha.</strong><br>El CSV contiene únicamente los encabezados.</div>
-    <p class="footer">Actualizado 2/08/2026, 11:30 a. m. Las cuotas son referencias de entrenamiento y los registros permanecen en simulación.</p>
+    <div class="empty" id="empty"><strong>No se crearon combinadas en esta fecha.</strong><br>El CSV contiene únicamente los encabezados.</div>
+    <p class="footer">Actualizado 3/08/2026, 6:00 a. m. Las cuotas son referencias de entrenamiento y los registros permanecen en simulación.</p>
   </main>
   <script>
     const dateFilter = document.getElementById("date-filter");
