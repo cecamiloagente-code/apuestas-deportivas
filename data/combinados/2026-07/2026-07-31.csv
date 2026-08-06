@@ -1,5 +1,5 @@
-fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
-2026-07-31,1,sim-1785520614885-1,1,lost,5000,4.48,22400,0,2026-08-01 18:30,MLS,D.C. United,Nashville SC,1X2,VISITANTE,Nashville SC,2.30
-2026-07-31,1,sim-1785520614885-1,2,lost,5000,4.48,22400,0,2026-08-02 10:00,Norwegian Eliteserien,Aalesund,Tromso,1X2,VISITANTE,Tromso,1.95
-2026-07-31,2,sim-1785520614885-2,1,void,4975,4.95,24626,4975,2026-08-01 20:06,Liga MX,León,Pachuca,1X2,VISITANTE,Pachuca,2.25
-2026-07-31,2,sim-1785520614885-2,2,void,4975,4.95,24626,4975,2026-08-01 19:30,MLS,Sporting Kansas City,Houston Dynamo FC,1X2,VISITANTE,Houston Dynamo FC,2.20
+fecha,combinado,combinado_id,partido,cantidad_partidos,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,ganancia_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
+2026-07-31,1,sim-1785520614885-1,1,2,lost,5000,4.48,22400,17400,0,2026-08-01 18:30,MLS,D.C. United,Nashville SC,1X2,VISITANTE,Nashville SC,2.30
+2026-07-31,1,sim-1785520614885-1,2,2,lost,5000,4.48,22400,17400,0,2026-08-02 10:00,Norwegian Eliteserien,Aalesund,Tromso,1X2,VISITANTE,Tromso,1.95
+2026-07-31,2,sim-1785520614885-2,1,2,void,4975,4.95,24626,19651,4975,2026-08-01 20:06,Liga MX,León,Pachuca,1X2,VISITANTE,Pachuca,2.25
+2026-07-31,2,sim-1785520614885-2,2,2,void,4975,4.95,24626,19651,4975,2026-08-01 19:30,MLS,Sporting Kansas City,Houston Dynamo FC,1X2,VISITANTE,Houston Dynamo FC,2.20
