@@ -1,3 +1,3 @@
-fecha,combinado,combinado_id,partido,cantidad_partidos,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,ganancia_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
-2026-08-01,1,sim-1785591027981-3,1,2,lost,4950,4.39,21730,16780,0,2026-08-02 15:00,NWSL,Washington Spirit,San Diego Wave FC,1X2,LOCAL,Washington Spirit,2.35
-2026-08-01,1,sim-1785591027981-3,2,2,lost,4950,4.39,21730,16780,0,2026-08-09 14:00,Brasileirão Serie A,Esporte Clube Bahia,Vasco da Gama,1X2,LOCAL,Esporte Clube Bahia,1.87
+fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
+2026-08-01,1,sim-1785591027981-3,1,lost,4950,4.39,21730,0,2026-08-02 15:00,NWSL,Washington Spirit,San Diego Wave FC,1X2,LOCAL,Washington Spirit,2.35
+2026-08-01,1,sim-1785591027981-3,2,lost,4950,4.39,21730,0,2026-08-09 14:00,Brasileirão Serie A,Esporte Clube Bahia,Vasco da Gama,1X2,LOCAL,Esporte Clube Bahia,1.87
