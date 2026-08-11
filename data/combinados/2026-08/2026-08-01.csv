@@ -1,3 +1,9 @@
 fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
-2026-08-01,1,sim-1785591027981-3,1,lost,4950,4.39,21730,0,2026-08-02 15:00,NWSL,Washington Spirit,San Diego Wave FC,1X2,LOCAL,Washington Spirit,2.35
-2026-08-01,1,sim-1785591027981-3,2,lost,4950,4.39,21730,0,2026-08-09 14:00,Brasileirão Serie A,Bahia,Vasco da Gama,1X2,LOCAL,Bahia,1.87
+2026-08-01,1,sim-1785591025543-29,1,void,9644,3.48,33561,9644,2026-08-01 20:30,MLS,Colorado Rapids,Austin FC,1X2,LOCAL,Colorado Rapids,1.74
+2026-08-01,1,sim-1785591025543-29,2,void,9644,3.48,33561,9644,2026-08-01 19:30,MLS,St. Louis CITY SC,Real Salt Lake,1X2,LOCAL,St. Louis CITY SC,2.00
+2026-08-01,2,sim-1785520614671-23,1,won,10000,3.32,33200,15100,2026-08-01 19:30,MLS,Sporting Kansas City,Houston Dynamo FC,1X2,VISITANTE,Houston Dynamo FC,2.20
+2026-08-01,2,sim-1785520614671-23,2,won,10000,3.32,33200,15100,2026-08-01 11:00,Norwegian Eliteserien,IK Start,Viking FK,1X2,VISITANTE,Viking FK,1.51
+2026-08-01,3,sim-1785520614671-24,1,lost,10000,2.97,29700,0,2026-08-01 18:30,MLS,Inter Miami CF,Columbus Crew,1X2,LOCAL,Inter Miami CF,1.65
+2026-08-01,3,sim-1785520614671-24,2,lost,10000,2.97,29700,0,2026-08-01 08:00,Swedish Allsvenskan,BK Häcken,Kalmar FF,1X2,LOCAL,BK Häcken,1.80
+2026-08-01,4,sim-1785520614885-2,1,void,4975,4.95,24626,4975,2026-08-01 20:06,Liga MX,León,Pachuca,1X2,VISITANTE,Pachuca,2.25
+2026-08-01,4,sim-1785520614885-2,2,void,4975,4.95,24626,4975,2026-08-01 19:30,MLS,Sporting Kansas City,Houston Dynamo FC,1X2,VISITANTE,Houston Dynamo FC,2.20

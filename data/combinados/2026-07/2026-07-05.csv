@@ -1,0 +1,5 @@
+fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
+2026-07-05,1,sim-1783215862732-1,1,won,10000,2.88,28800,28800,2026-07-05 07:00,Swedish Allsvenskan,Kalmar FF,Örgryte IS,1X2,OTRO,Kalmar FF,1.51
+2026-07-05,1,sim-1783215862732-1,2,won,10000,2.88,28800,28800,2026-07-05 09:30,Swedish Allsvenskan,IF Elfsborg,Hammarby IF,1X2,OTRO,Hammarby IF,1.91
+2026-07-05,2,sim-1783215862732-2,1,lost,10000,3.32,33200,0,2026-07-05 07:00,Swedish Allsvenskan,Kalmar FF,Örgryte IS,1X2,OTRO,Kalmar FF,1.51
+2026-07-05,2,sim-1783215862732-2,2,lost,10000,3.32,33200,0,2026-07-05 07:00,Swedish Allsvenskan,IFK Göteborg,AIK,1X2,OTRO,IFK Göteborg,2.20

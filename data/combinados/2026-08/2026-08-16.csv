@@ -1,0 +1,7 @@
+fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
+2026-08-16,1,sim-1786446032116-42,1,pending,9303,3.08,28653,,2026-08-16 16:30,Brasileirão Serie A,Mirassol FC,Flamengo,1X2,VISITANTE,Flamengo,1.77
+2026-08-16,1,sim-1786446032116-42,2,pending,9303,3.08,28653,,2026-08-16 10:00,Norwegian Eliteserien,Sarpsborg 08,Sandefjord Fotball,1X2,LOCAL,Sarpsborg 08,1.74
+2026-08-16,2,sim-1786186832402-40,1,pending,6995,3.87,27070,,2026-08-16 22:00,Liga MX,Tijuana,Cruz Azul,1X2,VISITANTE,Cruz Azul,2.15
+2026-08-16,2,sim-1786186832402-40,2,pending,6995,3.87,27070,,2026-08-16 13:00,Liga MX,Pumas UNAM,Querétaro,1X2,LOCAL,Pumas UNAM,1.80
+2026-08-16,3,sim-1786100433912-36,1,pending,9714,4.10,39827,,2026-08-16 17:00,MLS,New York City FC,Philadelphia Union,1X2,LOCAL,New York City FC,2.05
+2026-08-16,3,sim-1786100433912-36,2,pending,9714,4.10,39827,,2026-08-16 21:30,MLS,Seattle Sounders,Vancouver Whitecaps,1X2,VISITANTE,Vancouver Whitecaps,2.00

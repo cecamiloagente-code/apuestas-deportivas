@@ -1,3 +1,5 @@
 fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
-2026-08-02,1,sim-1785668426633-4,1,won,4925,4.10,20192,20192,2026-08-02 10:00,Norwegian Eliteserien,Aalesund,Tromso,1X2,VISITANTE,Tromso,2.00
-2026-08-02,1,sim-1785668426633-4,2,won,4925,4.10,20192,20192,2026-08-02 07:00,Swedish Allsvenskan,IF Brommapojkarna,Malmö FF,1X2,VISITANTE,Malmö FF,2.05
+2026-08-02,1,sim-1785668424341-30,1,lost,9548,2.93,27975,0,2026-08-02 15:00,NWSL,Washington Spirit,San Diego Wave FC,1X2,LOCAL,Washington Spirit,2.05
+2026-08-02,1,sim-1785668424341-30,2,lost,9548,2.93,27975,0,2026-08-02 18:00,Liga MX,América,Santos,1X2,LOCAL,América,1.43
+2026-08-02,2,sim-1785668426633-4,1,won,4925,4.10,20192,20192,2026-08-02 10:00,Norwegian Eliteserien,Aalesund,Tromso,1X2,VISITANTE,Tromso,2.00
+2026-08-02,2,sim-1785668426633-4,2,won,4925,4.10,20192,20192,2026-08-02 07:00,Swedish Allsvenskan,IF Brommapojkarna,Malmö FF,1X2,VISITANTE,Malmö FF,2.05

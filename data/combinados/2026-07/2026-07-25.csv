@@ -1,0 +1,7 @@
+fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
+2026-07-25,1,sim-1784899823175-11,1,lost,10000,4.41,44100,0,2026-07-25 18:30,MLS,Orlando City SC,Nashville SC,1X2,VISITANTE,Nashville SC,2.10
+2026-07-25,1,sim-1784899823175-11,2,lost,10000,4.41,44100,0,2026-07-25 18:30,MLS,CF Montréal,Inter Miami CF,1X2,VISITANTE,Inter Miami CF,2.10
+2026-07-25,2,sim-1784899823175-12,1,lost,9980,4.40,43912,0,2026-07-25 09:00,Norwegian Eliteserien,Kristiansund BK,IK Start,1X2,LOCAL,Kristiansund BK,2.20
+2026-07-25,2,sim-1784899823175-12,2,lost,9980,4.40,43912,0,2026-07-25 18:30,MLS,New England Revolution,Atlanta United FC,1X2,LOCAL,New England Revolution,2.00
+2026-07-25,3,sim-1784899823175-13,1,won,9880,3.54,34975,34975,2026-07-25 16:30,Brasileirão Serie A,Athletico-PR,Internacional,1X2,LOCAL,Athletico-PR,2.00
+2026-07-25,3,sim-1784899823175-13,2,won,9880,3.54,34975,34975,2026-07-25 08:00,Swedish Allsvenskan,Degerfors IF,Djurgården,1X2,VISITANTE,Djurgården,1.77
