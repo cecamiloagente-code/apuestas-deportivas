@@ -1,15 +1,15 @@
 fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
-2026-08-16,1,sim-1786878016638-46,1,pending,8936,3.75,33510,,2026-08-16 09:00,Brasileirão Serie A,Chapecoense SC,Esporte Clube Bahia,1X2,VISITANTE,Esporte Clube Bahia,2.05
-2026-08-16,1,sim-1786878016638-46,2,pending,8936,3.75,33510,,2026-08-16 14:00,Brasileirão Serie A,Atlético Mineiro,Gremio FBPA,1X2,LOCAL,Atlético Mineiro,1.83
+2026-08-16,1,sim-1786878016638-46,1,lost,8936,3.75,33510,0,2026-08-16 09:00,Brasileirão Serie A,Chapecoense SC,Esporte Clube Bahia,1X2,VISITANTE,Esporte Clube Bahia,2.05
+2026-08-16,1,sim-1786878016638-46,2,lost,8936,3.75,33510,0,2026-08-16 14:00,Brasileirão Serie A,Atlético Mineiro,Gremio FBPA,1X2,LOCAL,Atlético Mineiro,1.83
 2026-08-16,2,sim-1786878016639-47,1,pending,3715,4.21,15640,,2026-08-16 19:30,MLS,Austin FC,FC Dallas,1X2,VISITANTE,FC Dallas,2.25
 2026-08-16,2,sim-1786878016639-47,2,pending,3715,4.21,15640,,2026-08-16 12:15,Norwegian Eliteserien,Fredrikstad,Kristiansund BK,1X2,LOCAL,Fredrikstad,1.87
-2026-08-16,3,sim-1786446032116-42,1,pending,9303,3.08,28653,,2026-08-16 16:30,Brasileirão Serie A,Mirassol FC,Flamengo,1X2,VISITANTE,Flamengo,1.77
-2026-08-16,3,sim-1786446032116-42,2,pending,9303,3.08,28653,,2026-08-16 10:00,Norwegian Eliteserien,Sarpsborg 08,Sandefjord Fotball,1X2,LOCAL,Sarpsborg 08,1.74
-2026-08-16,4,sim-1786186832402-40,1,pending,6995,3.87,27070,,2026-08-16 22:00,Liga MX,Tijuana,Cruz Azul,1X2,VISITANTE,Cruz Azul,2.15
-2026-08-16,4,sim-1786186832402-40,2,pending,6995,3.87,27070,,2026-08-16 13:00,Liga MX,Pumas UNAM,Querétaro,1X2,LOCAL,Pumas UNAM,1.80
-2026-08-16,5,sim-1786100433912-36,1,pending,9714,4.10,39827,,2026-08-16 17:00,MLS,New York City FC,Philadelphia Union,1X2,LOCAL,New York City FC,2.05
-2026-08-16,5,sim-1786100433912-36,2,pending,9714,4.10,39827,,2026-08-16 21:30,MLS,Seattle Sounders,Vancouver Whitecaps,1X2,VISITANTE,Vancouver Whitecaps,2.00
-2026-08-16,6,sim-1786878019122-7,1,pending,4976,15.27,75983,,2026-08-16 09:00,Brasileirão Serie A,Chapecoense SC,Esporte Clube Bahia,1X2,VISITANTE,Esporte Clube Bahia,2.05
-2026-08-16,6,sim-1786878019122-7,2,pending,4976,15.27,75983,,2026-08-16 19:30,MLS,Austin FC,FC Dallas,1X2,VISITANTE,FC Dallas,2.25
-2026-08-16,6,sim-1786878019122-7,3,pending,4976,15.27,75983,,2026-08-16 16:30,Brasileirão Serie A,Mirassol FC,Flamengo,1X2,VISITANTE,Flamengo,1.87
-2026-08-16,6,sim-1786878019122-7,4,pending,4976,15.27,75983,,2026-08-16 10:00,Norwegian Eliteserien,Sarpsborg 08,Sandefjord Fotball,1X2,LOCAL,Sarpsborg 08,1.77
+2026-08-16,3,sim-1786446032116-42,1,lost,9303,3.08,28653,0,2026-08-16 16:30,Brasileirão Serie A,Mirassol FC,Flamengo,1X2,VISITANTE,Flamengo,1.77
+2026-08-16,3,sim-1786446032116-42,2,lost,9303,3.08,28653,0,2026-08-16 10:00,Norwegian Eliteserien,Sarpsborg 08,Sandefjord Fotball,1X2,LOCAL,Sarpsborg 08,1.74
+2026-08-16,4,sim-1786186832402-40,1,lost,6995,3.87,27070,0,2026-08-16 22:00,Liga MX,Tijuana,Cruz Azul,1X2,VISITANTE,Cruz Azul,2.15
+2026-08-16,4,sim-1786186832402-40,2,lost,6995,3.87,27070,0,2026-08-16 13:00,Liga MX,Pumas UNAM,Querétaro,1X2,LOCAL,Pumas UNAM,1.80
+2026-08-16,5,sim-1786100433912-36,1,lost,9714,4.10,39827,0,2026-08-16 17:00,MLS,New York City FC,Philadelphia Union,1X2,LOCAL,New York City FC,2.05
+2026-08-16,5,sim-1786100433912-36,2,lost,9714,4.10,39827,0,2026-08-16 21:30,MLS,Seattle Sounders,Vancouver Whitecaps,1X2,VISITANTE,Vancouver Whitecaps,2.00
+2026-08-16,6,sim-1786878019122-7,1,lost,4976,15.27,75983,0,2026-08-16 09:00,Brasileirão Serie A,Chapecoense SC,Esporte Clube Bahia,1X2,VISITANTE,Esporte Clube Bahia,2.05
+2026-08-16,6,sim-1786878019122-7,2,lost,4976,15.27,75983,0,2026-08-16 19:30,MLS,Austin FC,FC Dallas,1X2,VISITANTE,FC Dallas,2.25
+2026-08-16,6,sim-1786878019122-7,3,lost,4976,15.27,75983,0,2026-08-16 16:30,Brasileirão Serie A,Mirassol FC,Flamengo,1X2,VISITANTE,Flamengo,1.87
+2026-08-16,6,sim-1786878019122-7,4,lost,4976,15.27,75983,0,2026-08-16 10:00,Norwegian Eliteserien,Sarpsborg 08,Sandefjord Fotball,1X2,LOCAL,Sarpsborg 08,1.77
