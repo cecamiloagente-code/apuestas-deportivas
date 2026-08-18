@@ -1,8 +1,8 @@
 fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
 2026-08-15,1,sim-1786791614371-45,1,lost,9027,4.19,37823,0,2026-08-15 19:45,NWSL,Portland Thorns FC,Orlando Pride,1X2,LOCAL,Portland Thorns FC,1.95
 2026-08-15,1,sim-1786791614371-45,2,lost,9027,4.19,37823,0,2026-08-15 09:00,Norwegian Eliteserien,KFUM Oslo,Lillestrom SK,1X2,VISITANTE,Lillestrom SK,2.15
-2026-08-15,2,sim-1786100433913-37,1,pending,9617,3.43,32986,,2026-08-15 18:30,MLS,Charlotte FC,Columbus SC,1X2,LOCAL,Charlotte FC,2.20
-2026-08-15,2,sim-1786100433913-37,2,pending,9617,3.43,32986,,2026-08-15 21:30,MLS,LAFC,San Diego FC,1X2,LOCAL,LAFC,1.56
+2026-08-15,2,sim-1786100433913-37,1,won,9617,3.43,32986,21157,2026-08-15 18:30,MLS,Charlotte FC,Columbus SC,1X2,LOCAL,Charlotte FC,2.20
+2026-08-15,2,sim-1786100433913-37,2,won,9617,3.43,32986,21157,2026-08-15 21:30,MLS,LAFC,San Diego FC,1X2,LOCAL,LAFC,1.56
 2026-08-15,3,sim-1786791616775-6,1,lost,5000,15.20,76000,0,2026-08-15 08:00,Swedish Allsvenskan,Mjällby AIF,IK Sirius,1X2,VISITANTE,IK Sirius,2.05
 2026-08-15,3,sim-1786791616775-6,2,lost,5000,15.20,76000,0,2026-08-15 18:30,MLS,Charlotte FC,Columbus SC,1X2,LOCAL,Charlotte FC,2.25
 2026-08-15,3,sim-1786791616775-6,3,lost,5000,15.20,76000,0,2026-08-15 19:45,NWSL,Portland Thorns FC,Orlando Pride,1X2,LOCAL,Portland Thorns FC,1.95
