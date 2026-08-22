@@ -1,0 +1,9 @@
+fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
+2026-08-22,1,sim-1787396413203-50,1,pending,9558,3.51,33548,,2026-08-22 20:00,Liga MX,Puebla,Santos,1X2,LOCAL,Puebla,2.10
+2026-08-22,1,sim-1787396413203-50,2,pending,9558,3.51,33548,,2026-08-22 19:30,MLS,Nashville SC,Columbus Crew,1X2,LOCAL,Nashville SC,1.67
+2026-08-22,2,sim-1787396413203-51,1,pending,9463,3.60,34066,,2026-08-22 08:00,Swedish Allsvenskan,Örgryte IS,Halmstads BK,1X2,LOCAL,Örgryte IS,2.00
+2026-08-22,2,sim-1787396413203-51,2,pending,9463,3.60,34066,,2026-08-22 18:30,NWSL,North Carolina Courage,Boston Legacy FC,1X2,LOCAL,North Carolina Courage,1.80
+2026-08-22,3,sim-1787396415619-8,1,pending,4951,18.96,93870,,2026-08-22 18:30,MLS,New York Red Bulls,Chicago Fire,1X2,VISITANTE,Chicago Fire,2.35
+2026-08-22,3,sim-1787396415619-8,2,pending,4951,18.96,93870,,2026-08-22 18:30,Brasileirão Serie A,Cruzeiro,Flamengo,1X2,VISITANTE,Flamengo,2.30
+2026-08-22,3,sim-1787396415619-8,3,pending,4951,18.96,93870,,2026-08-22 20:00,Liga MX,Puebla,Santos,1X2,LOCAL,Puebla,2.10
+2026-08-22,3,sim-1787396415619-8,4,pending,4951,18.96,93870,,2026-08-22 19:30,MLS,Nashville SC,Columbus Crew,1X2,LOCAL,Nashville SC,1.67

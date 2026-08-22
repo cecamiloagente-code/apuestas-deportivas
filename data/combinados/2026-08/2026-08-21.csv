@@ -1,3 +1,3 @@
 fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
-2026-08-21,1,sim-1787310012897-49,1,pending,9440,3.13,29547,,2026-08-21 22:00,Liga MX,FC Juárez,America,1X2,VISITANTE,America,1.80
-2026-08-21,1,sim-1787310012897-49,2,pending,9440,3.13,29547,,2026-08-21 12:00,Swedish Allsvenskan,IK Sirius,BK Häcken,1X2,LOCAL,IK Sirius,1.74
+2026-08-21,1,sim-1787310012897-49,1,lost,9440,3.13,29547,0,2026-08-21 22:00,Liga MX,FC Juárez,America,1X2,VISITANTE,America,1.80
+2026-08-21,1,sim-1787310012897-49,2,lost,9440,3.13,29547,0,2026-08-21 12:00,Swedish Allsvenskan,IK Sirius,BK Häcken,1X2,LOCAL,IK Sirius,1.74
