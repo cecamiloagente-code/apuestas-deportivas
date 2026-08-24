@@ -1,17 +1,17 @@
 fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
 2026-08-23,1,sim-1787482813642-52,1,pending,9368,3.10,29040,,2026-08-23 20:00,Liga MX,Pumas UNAM,Necaxa,1X2,LOCAL,Pumas UNAM,1.95
 2026-08-23,1,sim-1787482813642-52,2,pending,9368,3.10,29040,,2026-08-23 14:00,Brasileirão Serie A,Palmeiras,Vasco da Gama,1X2,LOCAL,Palmeiras,1.59
-2026-08-23,2,sim-1787482813642-53,1,pending,9274,3.85,35704,,2026-08-23 18:00,Liga MX,Atlético San Luis,Pachuca,1X2,VISITANTE,Pachuca,2.25
-2026-08-23,2,sim-1787482813642-53,2,pending,9274,3.85,35704,,2026-08-23 15:00,NWSL,Washington Spirit,Orlando Pride,1X2,LOCAL,Washington Spirit,1.71
-2026-08-23,3,sim-1787482813643-54,1,pending,9181,4.20,38560,,2026-08-23 19:00,NWSL,Angel City FC,Gotham FC,1X2,VISITANTE,Gotham FC,2.05
-2026-08-23,3,sim-1787482813643-54,2,pending,9181,4.20,38560,,2026-08-23 16:30,Brasileirão Serie A,Chapecoense SC,São Paulo,1X2,VISITANTE,São Paulo,2.05
-2026-08-23,4,sim-1787482813643-55,1,pending,9090,3.76,34178,,2026-08-23 15:30,MLS,New England Revolution,New York City FC,1X2,LOCAL,New England Revolution,2.20
-2026-08-23,4,sim-1787482813643-55,2,pending,9090,3.76,34178,,2026-08-23 13:00,NWSL,Chicago Stars FC,Racing Louisville FC,1X2,VISITANTE,Racing Louisville FC,1.71
-2026-08-23,5,sim-1787482816124-9,1,pending,4926,15.38,75761,,2026-08-23 18:00,Liga MX,Atlético San Luis,Pachuca,1X2,VISITANTE,Pachuca,2.25
-2026-08-23,5,sim-1787482816124-9,2,pending,4926,15.38,75761,,2026-08-23 20:00,Liga MX,Pumas UNAM,Necaxa,1X2,LOCAL,Pumas UNAM,1.95
-2026-08-23,5,sim-1787482816124-9,3,pending,4926,15.38,75761,,2026-08-23 19:00,NWSL,Angel City FC,Gotham FC,1X2,VISITANTE,Gotham FC,2.05
-2026-08-23,5,sim-1787482816124-9,4,pending,4926,15.38,75761,,2026-08-23 15:00,NWSL,Washington Spirit,Orlando Pride,1X2,LOCAL,Washington Spirit,1.71
-2026-08-23,6,sim-1787482816125-10,1,pending,4902,15.81,77500,,2026-08-23 15:30,MLS,New England Revolution,New York City FC,1X2,LOCAL,New England Revolution,2.20
-2026-08-23,6,sim-1787482816125-10,2,pending,4902,15.81,77500,,2026-08-23 16:30,Brasileirão Serie A,Chapecoense SC,São Paulo,1X2,VISITANTE,São Paulo,2.05
-2026-08-23,6,sim-1787482816125-10,3,pending,4902,15.81,77500,,2026-08-23 13:00,NWSL,Chicago Stars FC,Racing Louisville FC,1X2,VISITANTE,Racing Louisville FC,1.71
-2026-08-23,6,sim-1787482816125-10,4,pending,4902,15.81,77500,,2026-08-23 09:30,Swedish Allsvenskan,IF Brommapojkarna,Degerfors IF,1X2,LOCAL,IF Brommapojkarna,2.05
+2026-08-23,2,sim-1787482813642-53,1,lost,9274,3.85,35704,0,2026-08-23 18:00,Liga MX,Atlético San Luis,Pachuca,1X2,VISITANTE,Pachuca,2.25
+2026-08-23,2,sim-1787482813642-53,2,lost,9274,3.85,35704,0,2026-08-23 15:00,NWSL,Washington Spirit,Orlando Pride,1X2,LOCAL,Washington Spirit,1.71
+2026-08-23,3,sim-1787482813643-54,1,lost,9181,4.20,38560,0,2026-08-23 19:00,NWSL,Angel City FC,Gotham FC,1X2,VISITANTE,Gotham FC,2.05
+2026-08-23,3,sim-1787482813643-54,2,lost,9181,4.20,38560,0,2026-08-23 16:30,Brasileirão Serie A,Chapecoense SC,São Paulo,1X2,VISITANTE,São Paulo,2.05
+2026-08-23,4,sim-1787482813643-55,1,lost,9090,3.76,34178,0,2026-08-23 15:30,MLS,New England Revolution,New York City FC,1X2,LOCAL,New England Revolution,2.20
+2026-08-23,4,sim-1787482813643-55,2,lost,9090,3.76,34178,0,2026-08-23 13:00,NWSL,Chicago Stars FC,Racing Louisville FC,1X2,VISITANTE,Racing Louisville FC,1.71
+2026-08-23,5,sim-1787482816124-9,1,lost,4926,15.38,75761,0,2026-08-23 18:00,Liga MX,Atlético San Luis,Pachuca,1X2,VISITANTE,Pachuca,2.25
+2026-08-23,5,sim-1787482816124-9,2,lost,4926,15.38,75761,0,2026-08-23 20:00,Liga MX,Pumas UNAM,Necaxa,1X2,LOCAL,Pumas UNAM,1.95
+2026-08-23,5,sim-1787482816124-9,3,lost,4926,15.38,75761,0,2026-08-23 19:00,NWSL,Angel City FC,Gotham FC,1X2,VISITANTE,Gotham FC,2.05
+2026-08-23,5,sim-1787482816124-9,4,lost,4926,15.38,75761,0,2026-08-23 15:00,NWSL,Washington Spirit,Orlando Pride,1X2,LOCAL,Washington Spirit,1.71
+2026-08-23,6,sim-1787482816125-10,1,lost,4902,15.81,77500,0,2026-08-23 15:30,MLS,New England Revolution,New York City FC,1X2,LOCAL,New England Revolution,2.20
+2026-08-23,6,sim-1787482816125-10,2,lost,4902,15.81,77500,0,2026-08-23 16:30,Brasileirão Serie A,Chapecoense SC,São Paulo,1X2,VISITANTE,São Paulo,2.05
+2026-08-23,6,sim-1787482816125-10,3,lost,4902,15.81,77500,0,2026-08-23 13:00,NWSL,Chicago Stars FC,Racing Louisville FC,1X2,VISITANTE,Racing Louisville FC,1.71
+2026-08-23,6,sim-1787482816125-10,4,lost,4902,15.81,77500,0,2026-08-23 09:30,Swedish Allsvenskan,IF Brommapojkarna,Degerfors IF,1X2,LOCAL,IF Brommapojkarna,2.05
