@@ -1,6 +1,6 @@
 fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
-2026-08-23,1,sim-1787482813642-52,1,pending,9368,3.10,29040,,2026-08-23 20:00,Liga MX,Pumas UNAM,Necaxa,1X2,LOCAL,Pumas UNAM,1.95
-2026-08-23,1,sim-1787482813642-52,2,pending,9368,3.10,29040,,2026-08-23 14:00,Brasileirão Serie A,Palmeiras,Vasco da Gama,1X2,LOCAL,Palmeiras,1.59
+2026-08-23,1,sim-1787482813642-52,1,won,9368,3.10,29040,14895,2026-08-23 20:00,Liga MX,Pumas UNAM,Necaxa,1X2,LOCAL,Pumas UNAM,1.95
+2026-08-23,1,sim-1787482813642-52,2,won,9368,3.10,29040,14895,2026-08-23 14:00,Brasileirão Serie A,Palmeiras,Vasco da Gama,1X2,LOCAL,Palmeiras,1.59
 2026-08-23,2,sim-1787482813642-53,1,lost,9274,3.85,35704,0,2026-08-23 18:00,Liga MX,Atlético San Luis,Pachuca,1X2,VISITANTE,Pachuca,2.25
 2026-08-23,2,sim-1787482813642-53,2,lost,9274,3.85,35704,0,2026-08-23 15:00,NWSL,Washington Spirit,Orlando Pride,1X2,LOCAL,Washington Spirit,1.71
 2026-08-23,3,sim-1787482813643-54,1,lost,9181,4.20,38560,0,2026-08-23 19:00,NWSL,Angel City FC,Gotham FC,1X2,VISITANTE,Gotham FC,2.05
