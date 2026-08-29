@@ -1,0 +1,15 @@
+fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
+2026-08-29,1,sim-1787997644118-58,1,pending,9347,4.29,40098,,2026-08-29 08:30,German Bundesliga,FC Cologne,TSG Hoffenheim,1X2,VISITANTE,TSG Hoffenheim,2.20
+2026-08-29,1,sim-1787997644118-58,2,pending,9347,4.29,40098,,2026-08-29 20:30,Colombian Primera A,Alianza FC,Atlético Nacional,1X2,VISITANTE,Atlético Nacional,1.95
+2026-08-29,2,sim-1787997644118-59,1,pending,9253,4.50,41638,,2026-08-29 13:45,French Ligue 1,AJ Auxerre,Angers SCO,1X2,LOCAL,AJ Auxerre,2.00
+2026-08-29,2,sim-1787997644118-59,2,pending,9253,4.50,41638,,2026-08-29 15:30,MLS,Seattle Sounders,Chicago Fire,1X2,VISITANTE,Chicago Fire,2.25
+2026-08-29,3,sim-1787997644118-60,1,pending,9161,2.89,26475,,2026-08-29 19:30,MLS,Nashville Soccer Club,FC Cincinnati,1X2,LOCAL,Nashville Soccer Club,1.77
+2026-08-29,3,sim-1787997644118-60,2,pending,9161,2.89,26475,,2026-08-29 17:00,Argentine Liga Profesional de Fútbol,Huracán,Estudiantes Río Cuarto,1X2,LOCAL,Huracán,1.63
+2026-08-29,4,sim-1787997644118-61,1,pending,9069,4.03,36548,,2026-08-29 18:00,Liga MX,Atlas,Querétaro,1X2,LOCAL,Atlas,2.20
+2026-08-29,4,sim-1787997644118-61,2,pending,9069,4.03,36548,,2026-08-29 16:25,Colombian Primera A,Jaguares de Córdoba,América de Cali,1X2,VISITANTE,América de Cali,1.83
+2026-08-29,5,sim-1787997644118-62,1,pending,937,3.93,3682,,2026-08-29 09:00,English Premier League,AFC Bournemouth,Everton,1X2,LOCAL,AFC Bournemouth,2.10
+2026-08-29,5,sim-1787997644118-62,2,pending,937,3.93,3682,,2026-08-29 14:00,Dutch Eredivisie,PEC Zwolle,NEC Nijmegen,1X2,VISITANTE,NEC Nijmegen,1.87
+2026-08-29,6,sim-1787997646302-11,1,pending,4877,15.19,74081,,2026-08-29 08:30,German Bundesliga,FC Cologne,TSG Hoffenheim,1X2,VISITANTE,TSG Hoffenheim,2.20
+2026-08-29,6,sim-1787997646302-11,2,pending,4877,15.19,74081,,2026-08-29 13:45,French Ligue 1,AJ Auxerre,Angers SCO,1X2,LOCAL,AJ Auxerre,2.00
+2026-08-29,6,sim-1787997646302-11,3,pending,4877,15.19,74081,,2026-08-29 20:30,Colombian Primera A,Alianza FC,Atlético Nacional,1X2,VISITANTE,Atlético Nacional,1.95
+2026-08-29,6,sim-1787997646302-11,4,pending,4877,15.19,74081,,2026-08-29 19:30,MLS,Nashville Soccer Club,FC Cincinnati,1X2,LOCAL,Nashville Soccer Club,1.77
