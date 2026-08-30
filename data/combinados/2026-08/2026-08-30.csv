@@ -1,0 +1,18 @@
+fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
+2026-08-30,1,sim-1788084064472-63,1,pending,8969,4.20,37669,,2026-08-30 08:00,French Ligue 1,Paris FC,Nice,1X2,LOCAL,Paris FC,2.05
+2026-08-30,1,sim-1788084064472-63,2,pending,8969,4.20,37669,,2026-08-30 16:30,Brasileirão Serie A,Mirassol FC,Palmeiras,1X2,VISITANTE,Palmeiras,2.05
+2026-08-30,2,sim-1788084064472-64,1,pending,8880,3.80,33744,,2026-08-30 19:30,Argentine Liga Profesional de Fútbol,Independiente Rivadavia,Racing Club,1X2,LOCAL,Independiente Rivadavia,2.25
+2026-08-30,2,sim-1788084064472-64,2,pending,8880,3.80,33744,,2026-08-30 10:00,Norwegian Eliteserien,Tromsø,Sarpsborg 08,1X2,LOCAL,Tromsø,1.69
+2026-08-30,3,sim-1788084064472-65,1,pending,8791,2.98,26197,,2026-08-30 10:00,Norwegian Eliteserien,Sandefjord Fotball,Brann,1X2,VISITANTE,Brann,2.10
+2026-08-30,3,sim-1788084064472-65,2,pending,8791,2.98,26197,,2026-08-30 15:00,Argentine Liga Profesional de Fútbol,Argentinos Juniors,Aldosivi,1X2,LOCAL,Argentinos Juniors,1.42
+2026-08-30,4,sim-1788084064472-66,1,pending,8703,3.96,34463,,2026-08-30 09:00,Brasileirão Serie A,Ath. Paranaense,Fluminense,1X2,LOCAL,Ath. Paranaense,2.20
+2026-08-30,4,sim-1788084064472-66,2,pending,8703,3.96,34463,,2026-08-30 08:30,German Bundesliga,SC Freiburg,Werder Bremen,1X2,LOCAL,SC Freiburg,1.80
+2026-08-30,5,sim-1788084064472-67,1,pending,913,3.43,3131,,2026-08-30 13:45,Italian Serie A,Lazio,Genoa,1X2,LOCAL,Lazio,2.20
+2026-08-30,5,sim-1788084064472-67,2,pending,913,3.43,3131,,2026-08-30 14:00,Colombian Primera A,Águilas Doradas,Boyacá Chicó FC,1X2,LOCAL,Águilas Doradas,1.56
+2026-08-30,6,sim-1788084066810-12,1,pending,4853,15.98,77550,,2026-08-30 19:30,Argentine Liga Profesional de Fútbol,Independiente Rivadavia,Racing Club,1X2,LOCAL,Independiente Rivadavia,2.25
+2026-08-30,6,sim-1788084066810-12,2,pending,4853,15.98,77550,,2026-08-30 08:00,French Ligue 1,Paris FC,Nice,1X2,LOCAL,Paris FC,2.05
+2026-08-30,6,sim-1788084066810-12,3,pending,4853,15.98,77550,,2026-08-30 16:30,Brasileirão Serie A,Mirassol FC,Palmeiras,1X2,VISITANTE,Palmeiras,2.05
+2026-08-30,6,sim-1788084066810-12,4,pending,4853,15.98,77550,,2026-08-30 10:00,Norwegian Eliteserien,Tromsø,Sarpsborg 08,1X2,LOCAL,Tromsø,1.69
+2026-08-30,7,sim-1788084066811-13,1,pending,4829,10.86,52442,,2026-08-30 09:30,Portuguese Primeira Liga,C.D. Nacional,Estrela,1X2,LOCAL,C.D. Nacional,2.35
+2026-08-30,7,sim-1788084066811-13,2,pending,4829,10.86,52442,,2026-08-30 10:00,Norwegian Eliteserien,Sandefjord Fotball,Brann,1X2,VISITANTE,Brann,2.10
+2026-08-30,7,sim-1788084066811-13,3,pending,4829,10.86,52442,,2026-08-30 09:00,Brasileirão Serie A,Ath. Paranaense,Fluminense,1X2,LOCAL,Ath. Paranaense,2.20
