@@ -1,3 +1,3 @@
 fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
-2026-08-28,1,sim-1787914829603-57,1,placed,9441,3.63,34270,,2026-08-28 20:00,Liga MX,Necaxa,Cruz Azul,1X2,VISITANTE,Cruz Azul,2.15
-2026-08-28,1,sim-1787914829603-57,2,placed,9441,3.63,34270,,2026-08-28 14:00,English Premier League,Crystal Palace,Manchester City,1X2,VISITANTE,Manchester City,1.69
+2026-08-28,1,sim-1787914829603-57,1,won,9441,3.63,34270,34270,2026-08-28 20:00,Liga MX,Necaxa,Cruz Azul,1X2,VISITANTE,Cruz Azul,2.15
+2026-08-28,1,sim-1787914829603-57,2,won,9441,3.63,34270,34270,2026-08-28 14:00,English Premier League,Crystal Palace,Manchester City,1X2,VISITANTE,Manchester City,1.69
