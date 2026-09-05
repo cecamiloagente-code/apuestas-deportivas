@@ -1,1 +1,11 @@
 fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
+2026-09-04,Combinado 1,sim-1788546988846-68,Lanús vs Defensa y Justicia,placed,8949,10.54,94322,,15:00,Argentine Liga Profesional de Fútbol,Lanús,Defensa y Justicia,1X2,VISITANTE,Defensa y Justicia,4.9
+2026-09-04,Combinado 1,sim-1788546988846-68,Everton vs Manchester United,placed,8949,10.54,94322,,08:00,English Premier League,Everton,Manchester United,1X2,VISITANTE,Manchester United,2.15
+2026-09-04,Combinado 2,sim-1788546988846-69,River Plate vs Independiente Rivadavia,pending,8860,12,106320,,17:15,Argentine Liga Profesional de Fútbol,River Plate,Independiente Rivadavia,1X2,VISITANTE,Independiente Rivadavia,5
+2026-09-04,Combinado 2,sim-1788546988846-69,Estudiantes de Río Cuarto vs Sarmiento (Junín),pending,8860,12,106320,,14:45,Argentine Liga Profesional de Fútbol,Estudiantes de Río Cuarto,Sarmiento (Junín),1X2,VISITANTE,Sarmiento (Junín),2.4
+2026-09-04,Combinado 3,sim-1788546988847-70,Tottenham Hotspur vs Everton,placed,8771,11.5,100866,,11:30,English Premier League,Tottenham Hotspur,Everton,1X2,VISITANTE,Everton,3.65
+2026-09-04,Combinado 3,sim-1788546988847-70,Aldosivi vs Banfield,placed,8771,11.5,100866,,11:30,Argentine Liga Profesional de Fútbol,Aldosivi,Banfield,1X2,VISITANTE,Banfield,3.15
+2026-09-04,Combinado 4,sim-1788546988847-71,Espanyol vs Sevilla,placed,8684,7.92,68777,,14:00,Spanish LALIGA,Espanyol,Sevilla,1X2,VISITANTE,Sevilla,3.3
+2026-09-04,Combinado 4,sim-1788546988847-71,Nottingham Forest vs Tottenham Hotspur,placed,8684,7.92,68777,,09:00,English Premier League,Nottingham Forest,Tottenham Hotspur,1X2,LOCAL,Nottingham Forest,2.4
+2026-09-04,Combinado 5,sim-1788546988847-72,Malmö FF vs AIK,pending,535,11.6,6206,,12:00,Swedish Allsvenskan,Malmö FF,AIK,1X2,VISITANTE,AIK,4
+2026-09-04,Combinado 5,sim-1788546988847-72,Estoril vs Arouca,pending,535,11.6,6206,,14:15,Portuguese Primeira Liga,Estoril,Arouca,1X2,VISITANTE,Arouca,2.9
