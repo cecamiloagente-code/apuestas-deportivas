@@ -1,9 +1,508 @@
-<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Historial de apuestas</title>
-<style>*{box-sizing:border-box}body{margin:0;font:15px system-ui;color:#202622;background:#f7f9f8;letter-spacing:0}main{max-width:1180px;margin:auto;padding:24px}h1{font-size:26px;margin:0 0 8px}h2{font-size:18px;margin-top:30px}.muted{color:#59625d}header{border-bottom:2px solid #167a54;padding-bottom:20px}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid #ccd5d0;gap:24px;padding:24px 0}.stats strong{display:block;font-size:24px;overflow-wrap:anywhere}.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:20px 0}input,button{font:inherit;padding:8px;border:1px solid #aebbb3;border-radius:4px;background:white}.scroll{overflow:auto}table{width:100%;border-collapse:collapse;text-align:left}th,td{padding:12px 8px;vertical-align:top;border-bottom:1px solid #dce3df}th{font-size:13px;color:#536058}.pick{color:#096a46;font-weight:700}.lost{color:#ad2831}.won{color:#096a46}ul{margin:0;padding-left:18px}li{margin-bottom:6px}small{display:block;margin-top:6px;color:#59625d}@media(max-width:640px){main{padding:16px}.stats{grid-template-columns:1fr;gap:16px}h1{font-size:23px}th,td{padding:10px 6px}table{min-width:700px}}</style>
-<main><header><h1>Historial de apuestas</h1><div class="muted">Actualizado: 8/9/2026, 9:41:55 a. m. (Colombia)</div></header>
-<section class="stats"><div>Importe con respaldo local<strong>$ 91.738</strong><small>12 colocaciones registradas</small></div><div>Ganancia/perdida documentada<strong>Sin conciliar</strong><small>0 liquidaciones documentadas; no es el saldo de Codere</small></div><div>Pendientes de conciliacion<strong>12</strong><small>2 registros adicionales de colocacion incompletos</small></div></section>
-<p>El resultado deportivo no confirma un cobro. Las cifras excluyen simulaciones y retornos potenciales.</p>
-<div class="toolbar"><label for="date">Fecha de colocacion</label><input type="date" id="date"><button id="clear" type="button">Ver todas</button><span id="count"></span></div>
-<div class="scroll"><table id="history"><thead><tr><th>Combinado / fecha</th><th>Partidos / seleccion</th><th>Cuotas registradas</th><th>Importe</th><th>Resultado deportivo</th><th>Liquidacion</th></tr></thead><tbody><tr data-date="2026-09-05"><td>73<small>5/9/2026, 6:00:40 a. m.</small></td><td><ul><li>Newcastle United vs AFC Bournemouth<br><span class="pick">AFC Bournemouth (Visitante)</span> <small class="lost">Perdido</small></li><li>Athletic Club vs Atlético Madrid<br><span class="pick">Atlético Madrid (Visitante)</span> <small class="lost">Perdido</small></li></ul></td><td>3.10 x 1.40</td><td>$ 8.591</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-09-04"><td>72<small>4/9/2026, 3:17:36 p. m.</small></td><td><ul><li>Malmö FF vs AIK<br><span class="pick">AIK (Visitante)</span> <small class="lost">Perdido</small></li><li>Estoril vs Arouca<br><span class="pick">Arouca (Visitante)</span> <small class="lost">Perdido</small></li></ul></td><td>3.90 x 3.00</td><td>$ 535</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-09-04"><td>71<small>4/9/2026, 3:14:23 p. m.</small></td><td><ul><li>Espanyol vs Sevilla<br><span class="pick">Sevilla (Visitante)</span> <small class="lost">Perdido</small></li><li>Nottingham Forest vs Tottenham Hotspur<br><span class="pick">Nottingham Forest (Local)</span> <small class="lost">Perdido</small></li></ul></td><td>3.25 x 2.50</td><td>$ 8.684</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-09-04"><td>70<small>4/9/2026, 3:09:42 p. m.</small></td><td><ul><li>Tottenham Hotspur vs Everton<br><span class="pick">Everton (Visitante)</span> <small class="unknown">Sin verificar</small></li><li>Aldosivi vs Banfield<br><span class="pick">Banfield (Visitante)</span> <small class="lost">Perdido</small></li></ul></td><td>3.60 x 3.00</td><td>$ 8.771</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-09-04"><td>68<small>4/9/2026, 3:02:05 p. m.</small></td><td><ul><li>Lanús vs Defensa y Justicia<br><span class="pick">Defensa y Justicia (Visitante)</span> <small class="lost">Perdido</small></li><li>Everton vs Manchester United<br><span class="pick">Manchester United (Visitante)</span> <small class="lost">Perdido</small></li></ul></td><td>4.60 x 2.15</td><td>$ 8.949</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-29"><td>62<small>29/8/2026, 7:50:38 a. m.</small></td><td><ul><li>AFC Bournemouth vs Everton<br><span class="pick">AFC Bournemouth (Local)</span> <small class="lost">Perdido</small></li><li>PEC Zwolle vs NEC Nijmegen<br><span class="pick">NEC Nijmegen (Visitante)</span> <small class="won">Ganado</small></li></ul></td><td>2.10 x 1.88</td><td>$ 937</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-29"><td>61<small>29/8/2026, 6:24:47 a. m.</small></td><td><ul><li>Atlas vs Querétaro<br><span class="pick">Atlas (Local)</span> <small class="lost">Perdido</small></li><li>Jaguares de Córdoba vs América de Cali<br><span class="pick">América de Cali (Visitante)</span> <small class="lost">Perdido</small></li></ul></td><td>1.95 x 1.83</td><td>$ 9.069</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-29"><td>60<small>29/8/2026, 8:25:12 a. m.</small></td><td><ul><li>Nashville Soccer Club vs FC Cincinnati<br><span class="pick">Nashville Soccer Club (Local)</span> <small class="won">Ganado</small></li><li>Huracán vs Estudiantes Río Cuarto<br><span class="pick">Huracán (Local)</span> <small class="lost">Perdido</small></li></ul></td><td>1.80 x 1.60</td><td>$ 9.161</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-29"><td>59<small>29/8/2026, 6:16:37 a. m.</small></td><td><ul><li>AJ Auxerre vs Angers SCO<br><span class="pick">AJ Auxerre (Local)</span> <small class="lost">Perdido</small></li><li>Seattle Sounders vs Chicago Fire<br><span class="pick">Chicago Fire (Visitante)</span> <small class="lost">Perdido</small></li></ul></td><td>1.95 x 2.20</td><td>$ 9.253</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-29"><td>58<small>29/8/2026, 7:38:12 a. m.</small></td><td><ul><li>FC Cologne vs TSG Hoffenheim<br><span class="pick">TSG Hoffenheim (Visitante)</span> <small class="lost">Perdido</small></li><li>Alianza FC vs Atlético Nacional<br><span class="pick">Atlético Nacional (Visitante)</span> <small class="won">Ganado</small></li></ul></td><td>2.20 x 2.00</td><td>$ 9.347</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-28"><td>57<small>28/8/2026, 10:55:51 a. m.</small></td><td><ul><li>Necaxa vs Cruz Azul<br><span class="pick">Cruz Azul (Visitante)</span> <small class="won">Ganado</small></li><li>Crystal Palace vs Manchester City<br><span class="pick">Manchester City (Visitante)</span> <small class="won">Ganado</small></li></ul></td><td>2.25 x 1.17</td><td>$ 9.441</td><td class="won">Ganado</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-26"><td>56<small>26/8/2026, 8:31:11 a. m.</small></td><td><ul><li>América de Cali vs Atlético Junior<br><span class="pick">América de Cali (Local)</span> <small class="won">Ganado</small></li><li>Atlético Nacional vs Deportivo Cali<br><span class="pick">Atlético Nacional (Local)</span> <small class="won">Ganado</small></li></ul></td><td>2.00 x 1.60</td><td>$ 9.000</td><td class="won">Ganado</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-06"><td>32<small>6/8/2026, 4:06:26 p. m.</small></td><td><ul><li>Coritiba vs Chapecoense<br><span class="pick">Coritiba (Local)</span> <small class="unknown">Sin verificar</small></li><li>Malmö FF vs Degerfors IF<br><span class="pick">Malmö FF (Local)</span> <small class="unknown">Sin verificar</small></li></ul></td><td>Sin verificar</td><td>Sin conciliar</td><td class="unknown">Sin verificar</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-06"><td>31<small>6/8/2026, 4:06:26 p. m.</small></td><td><ul><li>Hamarkameratene vs Aalesund<br><span class="pick">Hamarkameratene (Local)</span> <small class="unknown">Sin verificar</small></li><li>Örgryte IS vs AIK<br><span class="pick">AIK (Visitante)</span> <small class="unknown">Sin verificar</small></li></ul></td><td>Sin verificar</td><td>Sin conciliar</td><td class="unknown">Sin verificar</td><td>Sin conciliar<small>Sin comprobante</small></td></tr></tbody></table></div>
-<h2>Evaluacion historica del modelo</h2><p>Sin cambios predictivos. Muestra seleccionada de apuestas registradas, no prueba de rentabilidad futura. Menor Brier indica menor error probabilistico.</p><div class="scroll"><table><thead><tr><th>Version</th><th>Selecciones</th><th>Acierto observado</th><th>Probabilidad media prevista</th><th>Brier modelo</th><th>Brier mercado</th></tr></thead><tbody><tr><td>sim-v2</td><td>7/14</td><td>50.0%</td><td>58.5%</td><td>0.239</td><td>0.232</td></tr><tr><td>sim-v3-shadow</td><td>0/9</td><td>0.0%</td><td>34.6%</td><td>0.126</td><td>0.106</td></tr></tbody></table></div><p class="muted">Consultas con error: 0. Datos deportivos consultados: 2026-09-08T14:36:57.946Z.</p>
-</main><script>const date=document.querySelector('#date'),rows=[...document.querySelectorAll('#history tbody tr')];function filter(){let n=0;for(const row of rows){row.hidden=!!date.value&&row.dataset.date!==date.value;if(!row.hidden)n++}document.querySelector('#count').textContent=n+' registros'}date.addEventListener('input',filter);document.querySelector('#clear').addEventListener('click',()=>{date.value='';filter()});filter();</script></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Asistente manual BetPlay</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      --bg: #f2f5f1;
+      --surface: #ffffff;
+      --ink: #17211b;
+      --muted: #617067;
+      --line: #d5ddd7;
+      --green: #087735;
+      --green-dark: #075b2b;
+      --green-soft: #e6f5ea;
+      --lime: #d7f34a;
+      --blue: #145d73;
+      --blue-soft: #e8f3f6;
+      --amber: #925000;
+      --amber-soft: #fff3d6;
+      --red: #b42318;
+      --red-soft: #fff0ee;
+      --shadow: 0 8px 24px rgba(23, 33, 27, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { background: var(--bg); }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+    button, input { font: inherit; letter-spacing: 0; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    a { color: inherit; }
+
+    .topbar {
+      color: #fff;
+      background: #14231a;
+      border-bottom: 4px solid var(--lime);
+    }
+    .topbar-inner, main {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    .topbar-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 14px 0;
+    }
+    .brand { min-width: 0; }
+    .brand strong { display: block; font-size: 22px; line-height: 1.2; }
+    .brand span { display: block; margin-top: 4px; color: #c7d3cb; font-size: 13px; }
+    .topbar-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .history-link { padding: 7px 9px; border: 1px solid #526159; border-radius: 4px; color: #fff; font-size: 12px; font-weight: 800; text-decoration: none; }
+    .history-link:hover { border-color: var(--lime); }
+    .operator-status {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .status-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--lime); }
+
+    main { padding: 28px 0 56px; }
+    .summary {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) repeat(3, minmax(140px, 190px));
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--line);
+      box-shadow: var(--shadow);
+    }
+    .summary-intro, .metric { background: var(--surface); padding: 18px 20px; }
+    .summary-intro h1 { margin: 0; font-size: 28px; line-height: 1.2; }
+    .summary-intro p { margin: 8px 0 0; color: var(--muted); line-height: 1.45; }
+    .metric { display: flex; flex-direction: column; justify-content: center; }
+    .metric-label { color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; }
+    .metric-value { margin-top: 6px; font-size: 18px; font-weight: 800; overflow-wrap: anywhere; }
+
+    .notice {
+      margin-top: 18px;
+      padding: 15px 18px;
+      border-left: 4px solid var(--amber);
+      background: var(--amber-soft);
+      color: #593400;
+      line-height: 1.45;
+    }
+    .notice strong { color: #402500; }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 30px 0 12px;
+    }
+    .section-heading h2 { margin: 0; font-size: 21px; }
+    .section-heading p { margin: 0; color: var(--muted); font-size: 13px; }
+    .tickets { display: grid; gap: 18px; }
+
+    .ticket {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .ticket-header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) repeat(3, minmax(130px, auto));
+      gap: 20px;
+      align-items: center;
+      padding: 17px 20px;
+      border-bottom: 1px solid var(--line);
+    }
+    .ticket-title { min-width: 0; }
+    .ticket-title h3 { margin: 0; font-size: 18px; overflow-wrap: anywhere; }
+    .ticket-title p { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
+    .ticket-stat span { display: block; color: var(--muted); font-size: 11px; font-weight: 700; text-transform: uppercase; }
+    .ticket-stat strong { display: block; margin-top: 4px; font-size: 17px; }
+
+    .leg { padding: 20px; border-bottom: 1px solid var(--line); }
+    .leg-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .leg-meta strong { color: var(--ink); }
+    .market-label { margin: 0 0 8px; color: var(--muted); font-size: 12px; font-weight: 800; text-transform: uppercase; }
+    .outcomes {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+    .outcome {
+      min-width: 0;
+      min-height: 88px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      background: #f8faf8;
+    }
+    .outcome.selected {
+      border: 2px solid var(--green);
+      background: var(--green-soft);
+      box-shadow: inset 0 -4px 0 var(--lime);
+    }
+    .outcome-role { display: block; color: var(--muted); font-size: 11px; font-weight: 800; text-transform: uppercase; }
+    .outcome-team { display: block; margin-top: 6px; font-weight: 800; overflow-wrap: anywhere; }
+    .outcome-odds { display: block; margin-top: 7px; color: var(--muted); font-size: 12px; }
+    .outcome.selected .outcome-team, .outcome.selected .outcome-odds strong { color: var(--green-dark); }
+
+    .entry-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(290px, 0.8fr);
+      gap: 24px;
+      padding: 20px;
+      background: #fbfcfb;
+    }
+    .entry-fields h4, .checks h4 { margin: 0 0 12px; font-size: 15px; }
+    .fields-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .field { display: grid; gap: 6px; }
+    .field label { color: var(--muted); font-size: 12px; font-weight: 700; }
+    .field input {
+      width: 100%;
+      height: 44px;
+      padding: 0 12px;
+      border: 1px solid #aebbb2;
+      border-radius: 4px;
+      color: var(--ink);
+      background: #fff;
+    }
+    .field input:focus { outline: 3px solid rgba(20, 93, 115, 0.18); border-color: var(--blue); }
+    .field small { min-height: 17px; color: var(--muted); font-size: 11px; }
+    .checks { border-left: 1px solid var(--line); padding-left: 24px; }
+    .check {
+      display: grid;
+      grid-template-columns: 18px minmax(0, 1fr);
+      gap: 9px;
+      align-items: start;
+      margin: 10px 0;
+      color: #344139;
+      font-size: 13px;
+      line-height: 1.35;
+    }
+    .check input { width: 18px; height: 18px; margin: 0; accent-color: var(--green); }
+
+    .ticket-actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 16px 20px;
+      border-top: 1px solid var(--line);
+    }
+    .button {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 16px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .button-primary { color: #fff; background: var(--green); }
+    .button-primary:hover { background: var(--green-dark); }
+    .button-secondary { color: var(--blue); border-color: var(--blue); background: #fff; }
+    .button-secondary:hover { background: var(--blue-soft); }
+    .result { flex: 1 1 320px; min-height: 42px; padding: 11px 13px; border-radius: 4px; font-size: 13px; line-height: 1.4; }
+    .result.idle { color: var(--muted); background: #eef1ef; }
+    .result.error { color: #70160f; background: var(--red-soft); }
+    .result.success { color: #084c24; background: var(--green-soft); }
+    .result ul { margin: 6px 0 0; padding-left: 18px; }
+
+    .empty {
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      text-align: center;
+      color: var(--muted);
+    }
+    .footer-note { margin-top: 24px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+
+    @media (max-width: 900px) {
+      .summary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .summary-intro { grid-column: 1 / -1; }
+      .ticket-header { grid-template-columns: minmax(0, 1fr) repeat(2, minmax(120px, auto)); }
+      .ticket-header .ticket-stat:last-child { display: none; }
+      .entry-panel { grid-template-columns: 1fr; }
+      .checks { border-left: 0; border-top: 1px solid var(--line); padding: 18px 0 0; }
+    }
+    @media (max-width: 620px) {
+      .topbar-inner, main { width: min(100% - 20px, 1180px); }
+      .topbar-inner { align-items: flex-start; flex-direction: column; gap: 10px; }
+      main { padding-top: 18px; }
+      .summary { grid-template-columns: 1fr; }
+      .summary-intro { grid-column: auto; }
+      .summary-intro h1 { font-size: 24px; }
+      .section-heading { align-items: flex-start; flex-direction: column; gap: 5px; }
+      .ticket-header { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+      .ticket-title { grid-column: 1 / -1; }
+      .ticket-header .ticket-stat:last-child { display: block; }
+      .leg { padding: 16px; }
+      .leg-meta { align-items: flex-start; flex-direction: column; gap: 4px; }
+      .outcomes { grid-template-columns: 1fr; }
+      .outcome { min-height: 72px; }
+      .entry-panel { padding: 16px; }
+      .fields-grid { grid-template-columns: 1fr; }
+      .ticket-actions { align-items: stretch; flex-direction: column; padding: 16px; }
+      .button, .result { width: 100%; flex-basis: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <strong>Asistente manual BetPlay</strong>
+        <span>Preparación y doble verificación de combinadas</span>
+      </div>
+      <div class="topbar-actions">
+        <a class="history-link" href="combinations-history.html">Histórico y CSV</a>
+        <div class="operator-status"><span class="status-dot" aria-hidden="true"></span>Sin conexión a la cuenta</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="summary" aria-labelledby="page-title">
+      <div class="summary-intro">
+        <h1 id="page-title">Cupones para revisar</h1>
+        <p>Abre BetPlay, arma el cupón manualmente y compara cada dato antes de confirmar.</p>
+      </div>
+      <div class="metric"><span class="metric-label">Cupones vigentes</span><strong class="metric-value" id="ticket-count">0</strong></div>
+      <div class="metric"><span class="metric-label">Perfil</span><strong class="metric-value" id="profile-name">-</strong></div>
+      <div class="metric"><span class="metric-label">Actualizado</span><strong class="metric-value" id="generated-at">-</strong></div>
+    </section>
+
+    <aside class="notice">
+      <strong>Importante:</strong> las cuotas de referencia provienen del proveedor de entrenamiento, no de BetPlay. Es obligatorio ingresar las cuotas vigentes y superar los mínimos indicados. El modelo continúa en simulación.
+    </aside>
+
+    <div class="section-heading">
+      <h2>Combinadas pendientes</h2>
+      <p>Mercado admitido por este verificador: resultado final 1X2</p>
+    </div>
+    <section class="tickets" id="tickets" aria-live="polite"></section>
+
+    <p class="footer-note">Este archivo no solicita ni guarda usuario, contraseña, códigos de verificación o saldo. La confirmación final se realiza exclusivamente en el sitio oficial por el titular de la cuenta.</p>
+  </main>
+
+  <script id="manifest-data" type="application/json">{"schemaVersion":"1.0","generatedAt":"2026-09-09T10:00:46.638Z","operator":{"name":"BetPlay","country":"Colombia","officialUrl":"https://betplay.com.co/apuestas","regulator":"Coljuegos"},"mode":"manual_entry_only","profile":"high-return","experimentalModel":true,"bankrollStartCop":1000000,"validation":{"market":"1X2","minLeadMinutes":30,"oddsProductTolerance":0.03,"maxReferenceOddsDeviation":0.35,"exactStakeRequired":true,"finalSubmission":"player_only"},"notices":["Las cuotas del modelo son referencias externas y no son cuotas capturadas de BetPlay.","La apuesta solo se considera revisada cuando la cuota vigente de BetPlay supera todos los mínimos.","El asistente no inicia sesión, no agrega selecciones y no pulsa el botón final de apostar.","El modelo sigue en simulación y no garantiza ganancias."],"tickets":[],"excluded":[]}</script>
+  <script>
+    const manifest = JSON.parse(document.getElementById("manifest-data").textContent);
+    const money = new Intl.NumberFormat("es-CO", { style: "currency", currency: "COP", maximumFractionDigits: 0 });
+    const dateTime = new Intl.DateTimeFormat("es-CO", {
+      timeZone: "America/Bogota",
+      dateStyle: "medium",
+      timeStyle: "short",
+    });
+
+    document.getElementById("ticket-count").textContent = String(manifest.tickets.length);
+    document.getElementById("profile-name").textContent = profileLabel(manifest.profile);
+    document.getElementById("generated-at").textContent = dateTime.format(new Date(manifest.generatedAt));
+
+    const container = document.getElementById("tickets");
+    if (!manifest.tickets.length) {
+      container.innerHTML = '<div class="empty"><strong>No hay combinadas vigentes.</strong><br>El generador excluyó apuestas iniciadas o demasiado cercanas al comienzo.</div>';
+    } else {
+      container.innerHTML = manifest.tickets.map(renderTicket).join("");
+      for (const ticket of manifest.tickets) {
+        document.getElementById("validate-" + ticket.id).addEventListener("click", () => validateTicket(ticket));
+        document.getElementById("copy-" + ticket.id).addEventListener("click", () => copyTicket(ticket));
+      }
+    }
+
+    function renderTicket(ticket, index) {
+      const legs = ticket.legs.map((leg, legIndex) => renderLeg(ticket, leg, legIndex)).join("");
+      const oddsFields = ticket.legs.map((leg, legIndex) => `
+        <div class="field">
+          <label for="odds-${escapeAttribute(ticket.id)}-${legIndex}">Cuota BetPlay: ${escapeHtml(leg.selection)}</label>
+          <input id="odds-${escapeAttribute(ticket.id)}-${legIndex}" inputmode="decimal" type="number" min="1.01" step="0.01" placeholder="Ej. ${leg.referenceOdds.toFixed(2)}">
+          <small>Mínimo aceptable ${leg.minimumOdds.toFixed(2)}</small>
+        </div>`).join("");
+
+      return `
+        <article class="ticket" id="ticket-${escapeAttribute(ticket.id)}">
+          <header class="ticket-header">
+            <div class="ticket-title">
+              <h3>Combinada ${index + 1}: ${ticket.legs.length} selecciones</h3>
+              <p>${escapeHtml(ticket.id)} · Modelo ${escapeHtml(ticket.modelVersion)}</p>
+            </div>
+            <div class="ticket-stat"><span>Monto exacto</span><strong>${money.format(ticket.stakeCop)}</strong></div>
+            <div class="ticket-stat"><span>Cuota referencia</span><strong>${ticket.referenceCombinedOdds.toFixed(2)}</strong></div>
+            <div class="ticket-stat"><span>Cuota mínima</span><strong>${ticket.minimumCombinedOdds.toFixed(2)}</strong></div>
+          </header>
+          ${legs}
+          <div class="entry-panel">
+            <section class="entry-fields">
+              <h4>Datos que muestra BetPlay</h4>
+              <div class="fields-grid">
+                ${oddsFields}
+                <div class="field">
+                  <label for="combined-${escapeAttribute(ticket.id)}">Cuota total del cupón</label>
+                  <input id="combined-${escapeAttribute(ticket.id)}" inputmode="decimal" type="number" min="1.01" step="0.01" placeholder="Mínimo ${ticket.minimumCombinedOdds.toFixed(2)}">
+                  <small>Debe coincidir con el producto de las selecciones</small>
+                </div>
+                <div class="field">
+                  <label for="stake-${escapeAttribute(ticket.id)}">Monto en pesos colombianos</label>
+                  <input id="stake-${escapeAttribute(ticket.id)}" inputmode="numeric" type="number" min="1" step="1" value="${ticket.stakeCop}">
+                  <small>El modelo indicó ${money.format(ticket.stakeCop)}</small>
+                </div>
+              </div>
+            </section>
+            <section class="checks">
+              <h4>Doble verificación</h4>
+              ${confirmation(ticket.id, "ownAccount", "Entré personalmente a mi cuenta y estoy en betplay.com.co.")}
+              ${confirmation(ticket.id, "events", "Equipos, torneo y hora coinciden en todas las selecciones.")}
+              ${confirmation(ticket.id, "market", "Elegí Resultado final 1X2 y el lado resaltado: local, empate o visitante.")}
+              ${confirmation(ticket.id, "stake", "El monto y el retorno potencial mostrados son los esperados.")}
+              ${confirmation(ticket.id, "experimentalModel", "Entiendo que el modelo está en simulación y no garantiza ganancias.")}
+            </section>
+          </div>
+          <footer class="ticket-actions">
+            <a class="button button-secondary" href="${escapeAttribute(manifest.operator.officialUrl)}" target="_blank" rel="noopener noreferrer">Abrir sitio oficial</a>
+            <button class="button button-secondary" type="button" id="copy-${escapeAttribute(ticket.id)}">Copiar lista</button>
+            <button class="button button-primary" type="button" id="validate-${escapeAttribute(ticket.id)}">Validar datos</button>
+            <div class="result idle" id="result-${escapeAttribute(ticket.id)}">Pendiente de ingresar las cuotas vigentes.</div>
+          </footer>
+        </article>`;
+    }
+
+    function renderLeg(ticket, leg, legIndex) {
+      const options = [
+        { outcome: "H", role: "Local", name: leg.homeTeamName },
+        { outcome: "D", role: "Empate", name: "Empate" },
+        { outcome: "A", role: "Visitante", name: leg.awayTeamName },
+      ];
+      return `
+        <section class="leg">
+          <div class="leg-meta">
+            <strong>${escapeHtml(leg.leagueName)} · Selección ${legIndex + 1}</strong>
+            <span>${dateTime.format(new Date(leg.startDate))} (hora Colombia)</span>
+          </div>
+          <p class="market-label">Resultado final 1X2</p>
+          <div class="outcomes">
+            ${options.map((option) => {
+              const selected = option.outcome === leg.outcome;
+              return `<div class="outcome${selected ? " selected" : ""}">
+                <span class="outcome-role">${option.role}</span>
+                <span class="outcome-team">${escapeHtml(option.name)}</span>
+                <span class="outcome-odds">${selected ? `Elegir · Ref. <strong>${leg.referenceOdds.toFixed(2)}</strong> · Mín. <strong>${leg.minimumOdds.toFixed(2)}</strong>` : "No elegir"}</span>
+              </div>`;
+            }).join("")}
+          </div>
+        </section>`;
+    }
+
+    function confirmation(ticketId, name, text) {
+      const id = "confirm-" + ticketId + "-" + name;
+      return `<label class="check" for="${escapeAttribute(id)}"><input id="${escapeAttribute(id)}" type="checkbox"><span>${escapeHtml(text)}</span></label>`;
+    }
+
+    function validateTicket(ticket) {
+      const result = document.getElementById("result-" + ticket.id);
+      const errors = [];
+      const odds = [];
+      const now = Date.now();
+      const minLeadMs = manifest.validation.minLeadMinutes * 60_000;
+
+      ticket.legs.forEach((leg, index) => {
+        if (new Date(leg.startDate).getTime() - now < minLeadMs) {
+          errors.push(leg.event + ": faltan menos de " + manifest.validation.minLeadMinutes + " minutos.");
+        }
+        const value = Number(document.getElementById("odds-" + ticket.id + "-" + index).value);
+        if (!Number.isFinite(value) || value <= 1) {
+          errors.push(leg.selection + ": falta una cuota decimal válida.");
+          return;
+        }
+        odds.push(value);
+        if (value < leg.minimumOdds) {
+          errors.push(leg.selection + ": cuota " + value.toFixed(2) + " menor al mínimo " + leg.minimumOdds.toFixed(2) + ".");
+        }
+        const deviation = Math.abs(value - leg.referenceOdds) / leg.referenceOdds;
+        if (deviation > manifest.validation.maxReferenceOddsDeviation) {
+          errors.push(leg.selection + ": diferencia superior al 35% frente a la referencia; revisa el mercado.");
+        }
+      });
+
+      const combined = Number(document.getElementById("combined-" + ticket.id).value);
+      const calculated = roundOdds(odds.reduce((total, value) => total * value, 1));
+      if (!Number.isFinite(combined) || combined <= 1) {
+        errors.push("Falta la cuota total del cupón.");
+      } else {
+        if (combined < ticket.minimumCombinedOdds) errors.push("Cuota total menor al mínimo " + ticket.minimumCombinedOdds.toFixed(2) + ".");
+        if (odds.length === ticket.legs.length && Math.abs(combined - calculated) > manifest.validation.oddsProductTolerance) {
+          errors.push("La cuota total no coincide con el producto " + calculated.toFixed(2) + ".");
+        }
+      }
+
+      const stake = Number(document.getElementById("stake-" + ticket.id).value);
+      if (stake !== ticket.stakeCop) errors.push("El monto debe ser exactamente " + money.format(ticket.stakeCop) + ".");
+
+      for (const name of ["ownAccount", "events", "market", "stake", "experimentalModel"]) {
+        if (!document.getElementById("confirm-" + ticket.id + "-" + name).checked) {
+          errors.push("Faltan confirmaciones de la doble verificación.");
+          break;
+        }
+      }
+
+      if (errors.length) {
+        result.className = "result error";
+        result.innerHTML = "<strong>No coincide. No confirmes la apuesta.</strong><ul>" + errors.map((message) => "<li>" + escapeHtml(message) + "</li>").join("") + "</ul>";
+        return;
+      }
+
+      result.className = "result success";
+      result.innerHTML = "<strong>Datos revisados.</strong> Cuota " + combined.toFixed(2) + ", monto " + money.format(stake) + ", retorno potencial " + money.format(Math.round(stake * combined)) + ". La decisión y confirmación final siguen siendo tuyas en BetPlay.";
+    }
+
+    async function copyTicket(ticket) {
+      const lines = [
+        "BETPLAY · ENTRADA MANUAL · " + ticket.id,
+        ...ticket.legs.map((leg, index) => (index + 1) + ". " + leg.event + " | 1X2 | " + leg.outcomeRole + ": " + leg.selection + " | cuota mínima " + leg.minimumOdds.toFixed(2)),
+        "Cuota combinada mínima: " + ticket.minimumCombinedOdds.toFixed(2),
+        "Monto exacto: " + money.format(ticket.stakeCop),
+      ];
+      const button = document.getElementById("copy-" + ticket.id);
+      try {
+        await navigator.clipboard.writeText(lines.join("\n"));
+        button.textContent = "Lista copiada";
+      } catch {
+        button.textContent = "No se pudo copiar";
+      }
+      setTimeout(() => { button.textContent = "Copiar lista"; }, 1800);
+    }
+
+    function profileLabel(profile) {
+      return profile === "high-return" ? "Alto retorno" : profile === "accelerated" ? "Desafío 5x" : "Control";
+    }
+    function roundOdds(value) { return Math.round((value + Number.EPSILON) * 100) / 100; }
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
+    }
+    function escapeAttribute(value) { return escapeHtml(value); }
+  </script>
+</body>
+</html>

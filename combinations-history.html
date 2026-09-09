@@ -1,9 +1,1743 @@
-<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Historial de apuestas</title>
-<style>*{box-sizing:border-box}body{margin:0;font:15px system-ui;color:#202622;background:#f7f9f8;letter-spacing:0}main{max-width:1180px;margin:auto;padding:24px}h1{font-size:26px;margin:0 0 8px}h2{font-size:18px;margin-top:30px}.muted{color:#59625d}header{border-bottom:2px solid #167a54;padding-bottom:20px}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid #ccd5d0;gap:24px;padding:24px 0}.stats strong{display:block;font-size:24px;overflow-wrap:anywhere}.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:20px 0}input,button{font:inherit;padding:8px;border:1px solid #aebbb3;border-radius:4px;background:white}.scroll{overflow:auto}table{width:100%;border-collapse:collapse;text-align:left}th,td{padding:12px 8px;vertical-align:top;border-bottom:1px solid #dce3df}th{font-size:13px;color:#536058}.pick{color:#096a46;font-weight:700}.lost{color:#ad2831}.won{color:#096a46}ul{margin:0;padding-left:18px}li{margin-bottom:6px}small{display:block;margin-top:6px;color:#59625d}@media(max-width:640px){main{padding:16px}.stats{grid-template-columns:1fr;gap:16px}h1{font-size:23px}th,td{padding:10px 6px}table{min-width:700px}}</style>
-<main><header><h1>Historial de apuestas</h1><div class="muted">Actualizado: 8/9/2026, 9:41:55 a. m. (Colombia)</div></header>
-<section class="stats"><div>Importe con respaldo local<strong>$ 91.738</strong><small>12 colocaciones registradas</small></div><div>Ganancia/perdida documentada<strong>Sin conciliar</strong><small>0 liquidaciones documentadas; no es el saldo de Codere</small></div><div>Pendientes de conciliacion<strong>12</strong><small>2 registros adicionales de colocacion incompletos</small></div></section>
-<p>El resultado deportivo no confirma un cobro. Las cifras excluyen simulaciones y retornos potenciales.</p>
-<div class="toolbar"><label for="date">Fecha de colocacion</label><input type="date" id="date"><button id="clear" type="button">Ver todas</button><span id="count"></span></div>
-<div class="scroll"><table id="history"><thead><tr><th>Combinado / fecha</th><th>Partidos / seleccion</th><th>Cuotas registradas</th><th>Importe</th><th>Resultado deportivo</th><th>Liquidacion</th></tr></thead><tbody><tr data-date="2026-09-05"><td>73<small>5/9/2026, 6:00:40 a. m.</small></td><td><ul><li>Newcastle United vs AFC Bournemouth<br><span class="pick">AFC Bournemouth (Visitante)</span> <small class="lost">Perdido</small></li><li>Athletic Club vs Atlético Madrid<br><span class="pick">Atlético Madrid (Visitante)</span> <small class="lost">Perdido</small></li></ul></td><td>3.10 x 1.40</td><td>$ 8.591</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-09-04"><td>72<small>4/9/2026, 3:17:36 p. m.</small></td><td><ul><li>Malmö FF vs AIK<br><span class="pick">AIK (Visitante)</span> <small class="lost">Perdido</small></li><li>Estoril vs Arouca<br><span class="pick">Arouca (Visitante)</span> <small class="lost">Perdido</small></li></ul></td><td>3.90 x 3.00</td><td>$ 535</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-09-04"><td>71<small>4/9/2026, 3:14:23 p. m.</small></td><td><ul><li>Espanyol vs Sevilla<br><span class="pick">Sevilla (Visitante)</span> <small class="lost">Perdido</small></li><li>Nottingham Forest vs Tottenham Hotspur<br><span class="pick">Nottingham Forest (Local)</span> <small class="lost">Perdido</small></li></ul></td><td>3.25 x 2.50</td><td>$ 8.684</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-09-04"><td>70<small>4/9/2026, 3:09:42 p. m.</small></td><td><ul><li>Tottenham Hotspur vs Everton<br><span class="pick">Everton (Visitante)</span> <small class="unknown">Sin verificar</small></li><li>Aldosivi vs Banfield<br><span class="pick">Banfield (Visitante)</span> <small class="lost">Perdido</small></li></ul></td><td>3.60 x 3.00</td><td>$ 8.771</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-09-04"><td>68<small>4/9/2026, 3:02:05 p. m.</small></td><td><ul><li>Lanús vs Defensa y Justicia<br><span class="pick">Defensa y Justicia (Visitante)</span> <small class="lost">Perdido</small></li><li>Everton vs Manchester United<br><span class="pick">Manchester United (Visitante)</span> <small class="lost">Perdido</small></li></ul></td><td>4.60 x 2.15</td><td>$ 8.949</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-29"><td>62<small>29/8/2026, 7:50:38 a. m.</small></td><td><ul><li>AFC Bournemouth vs Everton<br><span class="pick">AFC Bournemouth (Local)</span> <small class="lost">Perdido</small></li><li>PEC Zwolle vs NEC Nijmegen<br><span class="pick">NEC Nijmegen (Visitante)</span> <small class="won">Ganado</small></li></ul></td><td>2.10 x 1.88</td><td>$ 937</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-29"><td>61<small>29/8/2026, 6:24:47 a. m.</small></td><td><ul><li>Atlas vs Querétaro<br><span class="pick">Atlas (Local)</span> <small class="lost">Perdido</small></li><li>Jaguares de Córdoba vs América de Cali<br><span class="pick">América de Cali (Visitante)</span> <small class="lost">Perdido</small></li></ul></td><td>1.95 x 1.83</td><td>$ 9.069</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-29"><td>60<small>29/8/2026, 8:25:12 a. m.</small></td><td><ul><li>Nashville Soccer Club vs FC Cincinnati<br><span class="pick">Nashville Soccer Club (Local)</span> <small class="won">Ganado</small></li><li>Huracán vs Estudiantes Río Cuarto<br><span class="pick">Huracán (Local)</span> <small class="lost">Perdido</small></li></ul></td><td>1.80 x 1.60</td><td>$ 9.161</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-29"><td>59<small>29/8/2026, 6:16:37 a. m.</small></td><td><ul><li>AJ Auxerre vs Angers SCO<br><span class="pick">AJ Auxerre (Local)</span> <small class="lost">Perdido</small></li><li>Seattle Sounders vs Chicago Fire<br><span class="pick">Chicago Fire (Visitante)</span> <small class="lost">Perdido</small></li></ul></td><td>1.95 x 2.20</td><td>$ 9.253</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-29"><td>58<small>29/8/2026, 7:38:12 a. m.</small></td><td><ul><li>FC Cologne vs TSG Hoffenheim<br><span class="pick">TSG Hoffenheim (Visitante)</span> <small class="lost">Perdido</small></li><li>Alianza FC vs Atlético Nacional<br><span class="pick">Atlético Nacional (Visitante)</span> <small class="won">Ganado</small></li></ul></td><td>2.20 x 2.00</td><td>$ 9.347</td><td class="lost">Perdido</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-28"><td>57<small>28/8/2026, 10:55:51 a. m.</small></td><td><ul><li>Necaxa vs Cruz Azul<br><span class="pick">Cruz Azul (Visitante)</span> <small class="won">Ganado</small></li><li>Crystal Palace vs Manchester City<br><span class="pick">Manchester City (Visitante)</span> <small class="won">Ganado</small></li></ul></td><td>2.25 x 1.17</td><td>$ 9.441</td><td class="won">Ganado</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-26"><td>56<small>26/8/2026, 8:31:11 a. m.</small></td><td><ul><li>América de Cali vs Atlético Junior<br><span class="pick">América de Cali (Local)</span> <small class="won">Ganado</small></li><li>Atlético Nacional vs Deportivo Cali<br><span class="pick">Atlético Nacional (Local)</span> <small class="won">Ganado</small></li></ul></td><td>2.00 x 1.60</td><td>$ 9.000</td><td class="won">Ganado</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-06"><td>32<small>6/8/2026, 4:06:26 p. m.</small></td><td><ul><li>Coritiba vs Chapecoense<br><span class="pick">Coritiba (Local)</span> <small class="unknown">Sin verificar</small></li><li>Malmö FF vs Degerfors IF<br><span class="pick">Malmö FF (Local)</span> <small class="unknown">Sin verificar</small></li></ul></td><td>Sin verificar</td><td>Sin conciliar</td><td class="unknown">Sin verificar</td><td>Sin conciliar<small>Sin comprobante</small></td></tr><tr data-date="2026-08-06"><td>31<small>6/8/2026, 4:06:26 p. m.</small></td><td><ul><li>Hamarkameratene vs Aalesund<br><span class="pick">Hamarkameratene (Local)</span> <small class="unknown">Sin verificar</small></li><li>Örgryte IS vs AIK<br><span class="pick">AIK (Visitante)</span> <small class="unknown">Sin verificar</small></li></ul></td><td>Sin verificar</td><td>Sin conciliar</td><td class="unknown">Sin verificar</td><td>Sin conciliar<small>Sin comprobante</small></td></tr></tbody></table></div>
-<h2>Evaluacion historica del modelo</h2><p>Sin cambios predictivos. Muestra seleccionada de apuestas registradas, no prueba de rentabilidad futura. Menor Brier indica menor error probabilistico.</p><div class="scroll"><table><thead><tr><th>Version</th><th>Selecciones</th><th>Acierto observado</th><th>Probabilidad media prevista</th><th>Brier modelo</th><th>Brier mercado</th></tr></thead><tbody><tr><td>sim-v2</td><td>7/14</td><td>50.0%</td><td>58.5%</td><td>0.239</td><td>0.232</td></tr><tr><td>sim-v3-shadow</td><td>0/9</td><td>0.0%</td><td>34.6%</td><td>0.126</td><td>0.106</td></tr></tbody></table></div><p class="muted">Consultas con error: 0. Datos deportivos consultados: 2026-09-08T14:36:57.946Z.</p>
-</main><script>const date=document.querySelector('#date'),rows=[...document.querySelectorAll('#history tbody tr')];function filter(){let n=0;for(const row of rows){row.hidden=!!date.value&&row.dataset.date!==date.value;if(!row.hidden)n++}document.querySelector('#count').textContent=n+' registros'}date.addEventListener('input',filter);document.querySelector('#clear').addEventListener('click',()=>{date.value='';filter()});filter();</script></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Histórico de combinadas</title>
+  <link rel="icon" href="data:,">
+  <style>
+    :root {
+      --bg: #f3f5f2;
+      --surface: #ffffff;
+      --ink: #17211b;
+      --muted: #627168;
+      --line: #d5ddd7;
+      --green: #087735;
+      --green-dark: #075a2a;
+      --green-soft: #e7f5eb;
+      --lime: #d7f34a;
+      --blue: #145d73;
+      --blue-soft: #e8f3f6;
+      --amber: #925000;
+      --amber-soft: #fff3d6;
+      --red: #b42318;
+      --red-soft: #fff0ee;
+      --shadow: 0 8px 24px rgba(23, 33, 27, 0.07);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+    button, select { font: inherit; letter-spacing: 0; }
+    a { color: inherit; }
+    [hidden] { display: none !important; }
+    .topbar { color: #fff; background: #14231a; border-bottom: 4px solid var(--lime); }
+    .topbar-inner, main { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    .topbar-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 14px 0; }
+    .brand strong { display: block; font-size: 22px; }
+    .brand span { display: block; margin-top: 4px; color: #c7d3cb; font-size: 13px; }
+    .nav { display: flex; flex-wrap: wrap; gap: 8px; }
+    .nav a { padding: 8px 10px; border: 1px solid #526159; border-radius: 4px; color: #fff; font-size: 13px; font-weight: 700; text-decoration: none; }
+    .nav a:hover { border-color: var(--lime); }
+    main { padding: 28px 0 56px; }
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(240px, 1fr) minmax(210px, 280px) auto;
+      gap: 16px;
+      align-items: end;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .toolbar h1 { margin: 0; font-size: 28px; line-height: 1.2; }
+    .toolbar p { margin: 7px 0 0; color: var(--muted); line-height: 1.4; }
+    .date-field { display: grid; gap: 6px; }
+    .date-field label { color: var(--muted); font-size: 12px; font-weight: 800; text-transform: uppercase; }
+    .date-field select { width: 100%; height: 44px; padding: 0 12px; border: 1px solid #aebbb2; border-radius: 4px; color: var(--ink); background: #fff; }
+    .download {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 16px;
+      border-radius: 4px;
+      color: #fff;
+      background: var(--blue);
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .download:hover { background: #0f4a5c; }
+    .metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin-top: 16px; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--line); }
+    .metric { padding: 16px 18px; background: var(--surface); }
+    .metric span { display: block; color: var(--muted); font-size: 11px; font-weight: 800; text-transform: uppercase; }
+    .metric strong { display: block; margin-top: 5px; font-size: 21px; }
+    .section-title { display: flex; justify-content: space-between; gap: 20px; align-items: end; margin: 28px 0 12px; }
+    .section-title h2 { margin: 0; font-size: 21px; }
+    .section-title p { margin: 0; color: var(--muted); font-size: 12px; }
+    .records { display: grid; gap: 16px; }
+    .record { overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); }
+    .record-header { display: grid; grid-template-columns: minmax(0, 1fr) repeat(3, minmax(130px, auto)); gap: 18px; align-items: center; padding: 16px 18px; border-bottom: 1px solid var(--line); }
+    .record-title { min-width: 0; }
+    .record-title h3 { margin: 0; font-size: 17px; overflow-wrap: anywhere; }
+    .record-title p { margin: 5px 0 0; color: var(--muted); font-size: 12px; }
+    .stat span { display: block; color: var(--muted); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+    .stat strong { display: block; margin-top: 4px; font-size: 16px; }
+    .status { display: inline-flex; width: fit-content; margin-top: 7px; padding: 4px 7px; border-radius: 3px; font-size: 11px; font-weight: 800; text-transform: uppercase; }
+    .status-pending { color: #704000; background: var(--amber-soft); }
+    .status-placed { color: #174f66; background: #e6f2f6; }
+    .status-won { color: #084c24; background: var(--green-soft); }
+    .status-lost { color: #70160f; background: var(--red-soft); }
+    .status-void { color: #405047; background: #edf0ee; }
+    .leg { display: grid; grid-template-columns: 145px 145px minmax(240px, 1fr) minmax(210px, 0.8fr) 90px; gap: 14px; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--line); }
+    .leg:last-child { border-bottom: 0; }
+    .cell span { display: block; color: var(--muted); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+    .cell strong { display: block; margin-top: 4px; font-size: 13px; overflow-wrap: anywhere; }
+    .pick strong { color: var(--green-dark); }
+    .empty { padding: 32px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--muted); text-align: center; }
+    .footer { margin-top: 24px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+    @media (max-width: 860px) {
+      .toolbar { grid-template-columns: 1fr 1fr; }
+      .toolbar-intro { grid-column: 1 / -1; }
+      .record-header { grid-template-columns: minmax(0, 1fr) repeat(2, minmax(120px, auto)); }
+      .record-header .stat:last-child { display: none; }
+      .leg { grid-template-columns: 1fr 1fr; }
+      .leg .cell:nth-child(3), .leg .cell:nth-child(4) { grid-column: 1 / -1; }
+    }
+    @media (max-width: 600px) {
+      .topbar-inner, main { width: min(100% - 20px, 1120px); }
+      .topbar-inner { align-items: flex-start; flex-direction: column; }
+      .toolbar { grid-template-columns: 1fr; padding: 16px; }
+      .toolbar-intro { grid-column: auto; }
+      .toolbar h1 { font-size: 24px; }
+      .metrics { grid-template-columns: 1fr; }
+      .section-title { align-items: flex-start; flex-direction: column; gap: 5px; }
+      .record-header { grid-template-columns: 1fr 1fr; gap: 13px; }
+      .record-title { grid-column: 1 / -1; }
+      .record-header .stat:last-child { display: block; }
+      .leg { grid-template-columns: 1fr; padding: 14px 16px; }
+      .leg .cell:nth-child(3), .leg .cell:nth-child(4) { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><strong>Histórico de combinadas</strong><span>Archivo diario del perfil Normal + Alto retorno</span></div>
+      <nav class="nav" aria-label="Navegación"><a href="simulation-dashboard.html">Dashboard</a><a href="betplay-assistant.html">Asistente BetPlay</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="toolbar">
+      <div class="toolbar-intro"><h1>Combinadas por fecha</h1><p>Selecciona el día para consultar los cupones creados y descargar su CSV.</p></div>
+      <div class="date-field"><label for="date-filter">Fecha de partidos</label><select id="date-filter"><option value="2026-09-09" selected>9 de septiembre de 2026</option><option value="2026-09-07">7 de septiembre de 2026</option><option value="2026-09-06">6 de septiembre de 2026</option><option value="2026-09-05">5 de septiembre de 2026</option><option value="2026-08-30">30 de agosto de 2026</option><option value="2026-08-29">29 de agosto de 2026</option><option value="2026-08-28">28 de agosto de 2026</option><option value="2026-08-26">26 de agosto de 2026</option><option value="2026-08-23">23 de agosto de 2026</option><option value="2026-08-22">22 de agosto de 2026</option><option value="2026-08-21">21 de agosto de 2026</option><option value="2026-08-19">19 de agosto de 2026</option><option value="2026-08-17">17 de agosto de 2026</option><option value="2026-08-16">16 de agosto de 2026</option><option value="2026-08-15">15 de agosto de 2026</option><option value="2026-08-14">14 de agosto de 2026</option><option value="2026-08-09">9 de agosto de 2026</option><option value="2026-08-02">2 de agosto de 2026</option><option value="2026-08-01">1 de agosto de 2026</option><option value="2026-07-31">31 de julio de 2026</option><option value="2026-07-26">26 de julio de 2026</option><option value="2026-07-25">25 de julio de 2026</option><option value="2026-07-23">23 de julio de 2026</option><option value="2026-07-05">5 de julio de 2026</option></select></div>
+      <a class="download" id="csv-download" href="data/combinados/2026-09/2026-09-09.csv" download>Descargar CSV</a>
+    </section>
+    <section class="metrics" aria-label="Resumen de la fecha">
+      <div class="metric"><span>Combinadas</span><strong id="metric-count">2</strong></div>
+      <div class="metric"><span>Total apostado</span><strong id="metric-stake">$ 16.931</strong></div>
+      <div class="metric"><span>Retorno potencial</span><strong id="metric-potential">$ 109.131</strong></div>
+    </section>
+    <div class="section-title"><h2 id="records-title">Combinadas del 9 de septiembre de 2026</h2><p>Una tarjeta corresponde a un combinado</p></div>
+    <section class="records" id="records">
+    <article class="record" data-date="2026-09-09" data-stake="8508" data-potential="56067">
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788884475025-76</h3><p>Creado 8/09/2026, 11:21 a. m.</p><span class="status status-void">Sin estado</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 8.508</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>6.59</strong></div>
+        <div class="stat"><span>Retorno</span><strong>Pendiente</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-09-09 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Minnesota United vs FC Dallas</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>FC Dallas</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>3.60</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-09-09 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>UEFA Champions League</strong></div>
+        <div class="cell"><span>Partido</span><strong>Sporting CP vs Galatasaray SK</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Sporting CP</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.83</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-09-09" data-stake="8423" data-potential="53064">
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788884475025-77</h3><p>Creado 8/09/2026, 11:21 a. m.</p><span class="status status-placed">Realizada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 8.423</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>6.30</strong></div>
+        <div class="stat"><span>Retorno</span><strong>Pendiente</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-09-09 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>CF Montreal vs Charlotte FC</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Charlotte FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.80</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-09-09 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Toronto FC vs Nashville Soccer Club</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Nashville Soccer Club</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-09-06" data-stake="8594" data-potential="74509" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788688845327-75</h3><p>Creado 6/09/2026, 5:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 8.594</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>8.67</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-09-06 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Spanish LALIGA</strong></div>
+        <div class="cell"><span>Partido</span><strong>Espanyol vs Sevilla</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Sevilla</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>3.40</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-09-06 09:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Coritiba vs Mirassol FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Coritiba</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.55</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-09-05" data-stake="8591" data-potential="70532" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788602425778-73</h3><p>Creado 5/09/2026, 5:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 8.591</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>8.21</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-09-05 06:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>English Premier League</strong></div>
+        <div class="cell"><span>Partido</span><strong>Newcastle United vs AFC Bournemouth</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>AFC Bournemouth</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>3.35</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-09-05 09:15</strong></div>
+        <div class="cell"><span>Liga</span><strong>Spanish LALIGA</strong></div>
+        <div class="cell"><span>Partido</span><strong>Athletic Club vs Atlético Madrid</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Atlético Madrid</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.45</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-09-06" data-stake="8949" data-potential="94322" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788546988846-68</h3><p>Creado 4/09/2026, 1:36 p. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 8.949</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>10.54</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-09-06 15:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Argentine Liga Profesional de Fútbol</strong></div>
+        <div class="cell"><span>Partido</span><strong>Lanús vs Defensa y Justicia</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Defensa y Justicia</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>4.90</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-09-06 08:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>English Premier League</strong></div>
+        <div class="cell"><span>Partido</span><strong>Everton vs Manchester United</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Manchester United</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.15</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-09-07" data-stake="535" data-potential="6206" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788546988847-72</h3><p>Creado 4/09/2026, 1:36 p. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 535</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>11.60</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-09-07 12:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>Malmö FF vs AIK</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>AIK</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>4.00</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-09-07 14:15</strong></div>
+        <div class="cell"><span>Liga</span><strong>Portuguese Primeira Liga</strong></div>
+        <div class="cell"><span>Partido</span><strong>Estoril vs Arouca</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Arouca</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.90</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-30" data-stake="8969" data-potential="37669" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788084064472-63</h3><p>Creado 30/08/2026, 5:01 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 8.969</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.20</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 08:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>French Ligue 1</strong></div>
+        <div class="cell"><span>Partido</span><strong>Paris FC vs Nice</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Paris FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 16:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Mirassol FC vs Palmeiras</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Palmeiras</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-30" data-stake="8880" data-potential="33744" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788084064472-64</h3><p>Creado 30/08/2026, 5:01 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 8.880</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.80</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Argentine Liga Profesional de Fútbol</strong></div>
+        <div class="cell"><span>Partido</span><strong>Independiente Rivadavia vs Racing Club</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Independiente Rivadavia</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 10:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>Tromsø vs Sarpsborg 08</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Tromsø</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.69</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-30" data-stake="8791" data-potential="26197" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788084064472-65</h3><p>Creado 30/08/2026, 5:01 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 8.791</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>2.98</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 10:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>Sandefjord Fotball vs Brann</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Brann</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.10</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 15:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Argentine Liga Profesional de Fútbol</strong></div>
+        <div class="cell"><span>Partido</span><strong>Argentinos Juniors vs Aldosivi</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Argentinos Juniors</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.42</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-30" data-stake="8703" data-potential="34463" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788084064472-66</h3><p>Creado 30/08/2026, 5:01 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 8.703</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.96</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 09:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Ath. Paranaense vs Fluminense</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Ath. Paranaense</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 08:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>German Bundesliga</strong></div>
+        <div class="cell"><span>Partido</span><strong>SC Freiburg vs Werder Bremen</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>SC Freiburg</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.80</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-30" data-stake="913" data-potential="3131" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788084064472-67</h3><p>Creado 30/08/2026, 5:01 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 913</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.43</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 13:45</strong></div>
+        <div class="cell"><span>Liga</span><strong>Italian Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Lazio vs Genoa</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Lazio</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Colombian Primera A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Águilas Doradas vs Boyacá Chicó FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Águilas Doradas</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.56</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-29" data-stake="9347" data-potential="40098" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787997644118-58</h3><p>Creado 29/08/2026, 5:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.347</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.29</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 08:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>German Bundesliga</strong></div>
+        <div class="cell"><span>Partido</span><strong>FC Cologne vs TSG Hoffenheim</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>TSG Hoffenheim</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 20:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Colombian Primera A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Alianza FC vs Atlético Nacional</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Atlético Nacional</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.95</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-29" data-stake="9253" data-potential="41638" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787997644118-59</h3><p>Creado 29/08/2026, 5:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.253</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.50</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 13:45</strong></div>
+        <div class="cell"><span>Liga</span><strong>French Ligue 1</strong></div>
+        <div class="cell"><span>Partido</span><strong>AJ Auxerre vs Angers SCO</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>AJ Auxerre</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.00</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 15:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Seattle Sounders vs Chicago Fire</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Chicago Fire</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-29" data-stake="9161" data-potential="26475" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787997644118-60</h3><p>Creado 29/08/2026, 5:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.161</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>2.89</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Nashville Soccer Club vs FC Cincinnati</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Nashville Soccer Club</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.77</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 17:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Argentine Liga Profesional de Fútbol</strong></div>
+        <div class="cell"><span>Partido</span><strong>Huracán vs Estudiantes Río Cuarto</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Huracán</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.63</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-29" data-stake="9069" data-potential="36548" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787997644118-61</h3><p>Creado 29/08/2026, 5:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.069</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.03</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 18:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Atlas vs Querétaro</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Atlas</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 16:25</strong></div>
+        <div class="cell"><span>Liga</span><strong>Colombian Primera A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Jaguares de Córdoba vs América de Cali</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>América de Cali</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.83</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-29" data-stake="937" data-potential="3682" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787997644118-62</h3><p>Creado 29/08/2026, 5:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 937</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.93</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 09:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>English Premier League</strong></div>
+        <div class="cell"><span>Partido</span><strong>AFC Bournemouth vs Everton</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>AFC Bournemouth</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.10</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Dutch Eredivisie</strong></div>
+        <div class="cell"><span>Partido</span><strong>PEC Zwolle vs NEC Nijmegen</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>NEC Nijmegen</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.87</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-28" data-stake="9441" data-potential="34270" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787914829603-57</h3><p>Creado 28/08/2026, 6:00 a. m.</p><span class="status status-won">Ganada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.441</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.63</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 34.270</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-28 20:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Necaxa vs Cruz Azul</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Cruz Azul</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.15</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-28 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>English Premier League</strong></div>
+        <div class="cell"><span>Partido</span><strong>Crystal Palace vs Manchester City</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Manchester City</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.69</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-26" data-stake="9243" data-potential="26342" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787742051320-56</h3><p>Creado 26/08/2026, 6:00 a. m.</p><span class="status status-won">Ganada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.243</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>2.85</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 28.800</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-26 18:20</strong></div>
+        <div class="cell"><span>Liga</span><strong>Colombian Primera A</strong></div>
+        <div class="cell"><span>Partido</span><strong>América de Cali vs Atlético Junior</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>América de Cali</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.83</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-26 20:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Colombian Primera A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Atlético Nacional vs Deportivo Cali</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Atlético Nacional</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.56</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-23" data-stake="9368" data-potential="29040" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787482813642-52</h3><p>Creado 23/08/2026, 6:00 a. m.</p><span class="status status-won">Ganada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.368</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.10</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 14.895</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 20:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Pumas UNAM vs Necaxa</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Pumas UNAM</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.95</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Palmeiras vs Vasco da Gama</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Palmeiras</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.59</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-23" data-stake="9274" data-potential="35704" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787482813642-53</h3><p>Creado 23/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.274</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.85</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 18:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Atlético San Luis vs Pachuca</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Pachuca</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 15:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>Washington Spirit vs Orlando Pride</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Washington Spirit</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.71</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-23" data-stake="9181" data-potential="38560" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787482813643-54</h3><p>Creado 23/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.181</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.20</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 19:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>Angel City FC vs Gotham FC</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Gotham FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 16:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Chapecoense SC vs São Paulo</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>São Paulo</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-23" data-stake="9090" data-potential="34178" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787482813643-55</h3><p>Creado 23/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.090</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.76</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 15:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>New England Revolution vs New York City FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>New England Revolution</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 13:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>Chicago Stars FC vs Racing Louisville FC</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Racing Louisville FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.71</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-22" data-stake="9558" data-potential="33548" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787396413203-50</h3><p>Creado 22/08/2026, 6:00 a. m.</p><span class="status status-void">Anulada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.558</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.51</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 9.558</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-22 20:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Puebla vs Santos</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Puebla</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.10</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-22 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Nashville SC vs Columbus Crew</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Nashville SC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.67</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-22" data-stake="9463" data-potential="34066" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787396413203-51</h3><p>Creado 22/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.463</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.60</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-22 08:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>Örgryte IS vs Halmstads BK</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Örgryte IS</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.00</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-22 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>North Carolina Courage vs Boston Legacy FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>North Carolina Courage</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.80</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-21" data-stake="9440" data-potential="29547" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787310012897-49</h3><p>Creado 21/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.440</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.13</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-21 22:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>FC Juárez vs America</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>America</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.80</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-21 12:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>IK Sirius vs BK Häcken</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>IK Sirius</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.74</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-19" data-stake="9439" data-potential="40587" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787137215317-48</h3><p>Creado 19/08/2026, 6:00 a. m.</p><span class="status status-won">Ganada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.439</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.30</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 21.237</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-19 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Orlando City vs Chicago Fire</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Chicago Fire</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-19 19:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Sporting Kansas City vs Saint Louis City SC</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Saint Louis City SC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.91</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-16" data-stake="8936" data-potential="33510" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1786878016638-46</h3><p>Creado 16/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 8.936</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.75</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 09:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Chapecoense SC vs Esporte Clube Bahia</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Esporte Clube Bahia</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Atlético Mineiro vs Gremio FBPA</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Atlético Mineiro</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.83</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-16" data-stake="3715" data-potential="15640" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1786878016639-47</h3><p>Creado 16/08/2026, 6:00 a. m.</p><span class="status status-won">Ganada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 3.715</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.21</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 6.947</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Austin FC vs FC Dallas</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>FC Dallas</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 12:15</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>Fredrikstad vs Kristiansund BK</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Fredrikstad</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.87</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-15" data-stake="9027" data-potential="37823" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1786791614371-45</h3><p>Creado 15/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.027</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.19</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-15 19:45</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>Portland Thorns FC vs Orlando Pride</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Portland Thorns FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.95</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-15 09:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>KFUM Oslo vs Lillestrom SK</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Lillestrom SK</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.15</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-14" data-stake="9118" data-potential="25621" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1786705214644-44</h3><p>Creado 14/08/2026, 6:00 a. m.</p><span class="status status-void">Anulada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.118</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>2.81</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 9.118</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-14 19:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>Gotham FC vs Kansas City Current</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Gotham FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.77</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-14 21:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>Utah Royals vs Bay FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Utah Royals</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.59</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-16" data-stake="9303" data-potential="28653" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1786446032116-42</h3><p>Creado 11/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.303</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.08</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 16:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Mirassol FC vs Flamengo</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Flamengo</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.77</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 10:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>Sarpsborg 08 vs Sandefjord Fotball</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Sarpsborg 08</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.74</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-17" data-stake="9521" data-potential="30467" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1786186832402-38</h3><p>Creado 8/08/2026, 6:00 a. m.</p><span class="status status-void">Anulada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.521</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.20</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 9.521</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-17 20:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Necaxa vs León</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Necaxa</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.15</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-17 22:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Pachuca vs Puebla</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Pachuca</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.49</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-16" data-stake="6995" data-potential="27070" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1786186832402-40</h3><p>Creado 8/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 6.995</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.87</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 22:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Tijuana vs Cruz Azul</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Cruz Azul</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.15</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 13:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Pumas UNAM vs Querétaro</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Pumas UNAM</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.80</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-16" data-stake="9714" data-potential="39827" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1786100433912-36</h3><p>Creado 7/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.714</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.10</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 17:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>New York City FC vs Philadelphia Union</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>New York City FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 21:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Seattle Sounders vs Vancouver Whitecaps</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Vancouver Whitecaps</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.00</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-15" data-stake="9617" data-potential="32986" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1786100433913-37</h3><p>Creado 7/08/2026, 6:00 a. m.</p><span class="status status-won">Ganada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.617</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.43</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 21.157</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-15 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Charlotte FC vs Columbus SC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Charlotte FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-15 21:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>LAFC vs San Diego FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>LAFC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.56</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-02" data-stake="9548" data-potential="27975" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1785668424341-30</h3><p>Creado 2/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.548</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>2.93</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-02 15:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>Washington Spirit vs San Diego Wave FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Washington Spirit</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-02 18:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>América vs Santos</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>América</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.43</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-09" data-stake="9840" data-potential="29618" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1785591025543-27</h3><p>Creado 1/08/2026, 8:30 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.840</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.01</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-09 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Bahia vs Vasco da Gama</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Bahia</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.87</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-09 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Palmeiras vs Internacional</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Palmeiras</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.61</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-01" data-stake="9644" data-potential="33561" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1785591025543-29</h3><p>Creado 1/08/2026, 8:30 a. m.</p><span class="status status-void">Anulada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.644</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.48</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 9.644</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-01 20:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Colorado Rapids vs Austin FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Colorado Rapids</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.74</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-01 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>St. Louis CITY SC vs Real Salt Lake</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>St. Louis CITY SC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.00</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-01" data-stake="10000" data-potential="33200" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1785520614671-23</h3><p>Creado 31/07/2026, 12:56 p. m.</p><span class="status status-won">Ganada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 10.000</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.32</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 15.100</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-01 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Sporting Kansas City vs Houston Dynamo FC</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Houston Dynamo FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-01 11:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>IK Start vs Viking FK</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Viking FK</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.51</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-01" data-stake="10000" data-potential="29700" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1785520614671-24</h3><p>Creado 31/07/2026, 12:56 p. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 10.000</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>2.97</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-01 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Inter Miami CF vs Columbus Crew</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Inter Miami CF</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.65</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-01 08:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>BK Häcken vs Kalmar FF</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>BK Häcken</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.80</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-07-31" data-stake="1052" data-potential="2756" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1785520614671-26</h3><p>Creado 31/07/2026, 12:56 p. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 1.052</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>2.62</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-31 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>New York City FC vs Toronto FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>New York City FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.67</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-31 20:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Puebla vs Guadalajara</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Guadalajara</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.57</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-07-26" data-stake="9910" data-potential="28937" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1784986224861-17</h3><p>Creado 25/07/2026, 8:30 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.910</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>2.92</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-26 09:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>Malmö FF vs IF Elfsborg</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Malmö FF</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.87</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-26 20:06</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Pachuca vs Querétaro</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Pachuca</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.56</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-07-25" data-stake="10000" data-potential="44100" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1784899823175-11</h3><p>Creado 24/07/2026, 8:30 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 10.000</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.41</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-25 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Orlando City SC vs Nashville SC</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Nashville SC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.10</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-25 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>CF Montréal vs Inter Miami CF</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Inter Miami CF</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.10</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-07-25" data-stake="9980" data-potential="43912" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1784899823175-12</h3><p>Creado 24/07/2026, 8:30 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.980</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.40</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-25 09:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>Kristiansund BK vs IK Start</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Kristiansund BK</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-25 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>New England Revolution vs Atlanta United FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>New England Revolution</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.00</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-07-25" data-stake="9880" data-potential="34975" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1784899823175-13</h3><p>Creado 24/07/2026, 8:30 a. m.</p><span class="status status-won">Ganada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 9.880</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.54</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 34.975</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-25 16:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Athletico-PR vs Internacional</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Athletico-PR</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.00</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-25 08:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>Degerfors IF vs Djurgården</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Djurgården</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.77</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-07-23" data-stake="10000" data-potential="26700" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1784845670479-8</h3><p>Creado 23/07/2026, 5:27 p. m.</p><span class="status status-void">Anulada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 10.000</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>2.67</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 10.000</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-23 17:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Botafogo vs Vitória</strong></div>
+        <div class="cell pick"><span>1X2 · OTRO</span><strong>Botafogo</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.77</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-23 17:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Corinthians vs Remo</strong></div>
+        <div class="cell pick"><span>1X2 · OTRO</span><strong>Corinthians</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.51</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-07-05" data-stake="10000" data-potential="28800" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1783215862732-1</h3><p>Creado 4/07/2026, 8:44 p. m.</p><span class="status status-won">Ganada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 10.000</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>2.88</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 28.800</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-05 07:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>Kalmar FF vs Örgryte IS</strong></div>
+        <div class="cell pick"><span>1X2 · OTRO</span><strong>Kalmar FF</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.51</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-05 09:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>IF Elfsborg vs Hammarby IF</strong></div>
+        <div class="cell pick"><span>1X2 · OTRO</span><strong>Hammarby IF</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.91</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-07-05" data-stake="10000" data-potential="33200" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1783215862732-2</h3><p>Creado 4/07/2026, 8:44 p. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 10.000</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>3.32</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-05 07:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>Kalmar FF vs Örgryte IS</strong></div>
+        <div class="cell pick"><span>1X2 · OTRO</span><strong>Kalmar FF</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.51</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-07-05 07:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>IFK Göteborg vs AIK</strong></div>
+        <div class="cell pick"><span>1X2 · OTRO</span><strong>IFK Göteborg</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-30" data-stake="4805" data-potential="369648" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788091433735-14</h3><p>Creado 30/08/2026, 7:03 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.805</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>76.93</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 14:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Spanish LALIGA</strong></div>
+        <div class="cell"><span>Partido</span><strong>Celta Vigo vs Athletic Club</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Celta Vigo</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.70</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Argentine Liga Profesional de Fútbol</strong></div>
+        <div class="cell"><span>Partido</span><strong>Independiente Rivadavia vs Racing Club</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Independiente Rivadavia</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 08:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>French Ligue 1</strong></div>
+        <div class="cell"><span>Partido</span><strong>Paris FC vs Nice</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Paris FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 13:45</strong></div>
+        <div class="cell"><span>Liga</span><strong>Italian Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Lazio vs Genoa</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Lazio</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 08:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>German Bundesliga</strong></div>
+        <div class="cell"><span>Partido</span><strong>SC Freiburg vs Werder Bremen</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>SC Freiburg</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.80</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Colombian Primera A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Águilas Doradas vs Boyacá Chicó FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Águilas Doradas</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.56</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-30" data-stake="4780" data-potential="409550" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788091433735-15</h3><p>Creado 30/08/2026, 7:03 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.780</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>85.68</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 14:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Spanish LALIGA</strong></div>
+        <div class="cell"><span>Partido</span><strong>Celta Vigo vs Athletic Club</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Celta Vigo</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.70</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Argentine Liga Profesional de Fútbol</strong></div>
+        <div class="cell"><span>Partido</span><strong>Independiente Rivadavia vs Racing Club</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Independiente Rivadavia</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 08:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>French Ligue 1</strong></div>
+        <div class="cell"><span>Partido</span><strong>Paris FC vs Nice</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Paris FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 08:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>English Premier League</strong></div>
+        <div class="cell"><span>Partido</span><strong>Sunderland vs Fulham</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Sunderland</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.45</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 08:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>German Bundesliga</strong></div>
+        <div class="cell"><span>Partido</span><strong>SC Freiburg vs Werder Bremen</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>SC Freiburg</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.80</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Colombian Primera A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Águilas Doradas vs Boyacá Chicó FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Águilas Doradas</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.56</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-30" data-stake="4757" data-potential="259494" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788091433735-16</h3><p>Creado 30/08/2026, 7:03 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.757</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>54.55</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 14:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Spanish LALIGA</strong></div>
+        <div class="cell"><span>Partido</span><strong>Celta Vigo vs Athletic Club</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Celta Vigo</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.70</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Argentine Liga Profesional de Fútbol</strong></div>
+        <div class="cell"><span>Partido</span><strong>Independiente Rivadavia vs Racing Club</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Independiente Rivadavia</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 08:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>French Ligue 1</strong></div>
+        <div class="cell"><span>Partido</span><strong>Paris FC vs Nice</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Paris FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 08:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>German Bundesliga</strong></div>
+        <div class="cell"><span>Partido</span><strong>SC Freiburg vs Werder Bremen</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>SC Freiburg</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.80</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Colombian Primera A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Águilas Doradas vs Boyacá Chicó FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Águilas Doradas</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.56</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 21:10</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Monterrey vs Atlético San Luis</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Monterrey</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.56</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-30" data-stake="4853" data-potential="77550" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788084066810-12</h3><p>Creado 30/08/2026, 5:01 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.853</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>15.98</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Argentine Liga Profesional de Fútbol</strong></div>
+        <div class="cell"><span>Partido</span><strong>Independiente Rivadavia vs Racing Club</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Independiente Rivadavia</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 08:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>French Ligue 1</strong></div>
+        <div class="cell"><span>Partido</span><strong>Paris FC vs Nice</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Paris FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 16:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Mirassol FC vs Palmeiras</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Palmeiras</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 10:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>Tromsø vs Sarpsborg 08</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Tromsø</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.69</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-30" data-stake="4829" data-potential="52442" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1788084066811-13</h3><p>Creado 30/08/2026, 5:01 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.829</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>10.86</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 09:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Portuguese Primeira Liga</strong></div>
+        <div class="cell"><span>Partido</span><strong>C.D. Nacional vs Estrela</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>C.D. Nacional</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.35</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 10:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>Sandefjord Fotball vs Brann</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Brann</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.10</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-30 09:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Ath. Paranaense vs Fluminense</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Ath. Paranaense</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-29" data-stake="4877" data-potential="33666" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787997646302-11</h3><p>Creado 29/08/2026, 5:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.877</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>6.90</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 13:45</strong></div>
+        <div class="cell"><span>Liga</span><strong>French Ligue 1</strong></div>
+        <div class="cell"><span>Partido</span><strong>AJ Auxerre vs Angers SCO</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>AJ Auxerre</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.00</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 20:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Colombian Primera A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Alianza FC vs Atlético Nacional</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Atlético Nacional</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.95</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-29 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Nashville Soccer Club vs FC Cincinnati</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Nashville Soccer Club</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.77</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-23" data-stake="4926" data-potential="75761" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787482816124-9</h3><p>Creado 23/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.926</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>15.38</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 18:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Atlético San Luis vs Pachuca</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Pachuca</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 20:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Pumas UNAM vs Necaxa</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Pumas UNAM</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.95</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 19:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>Angel City FC vs Gotham FC</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Gotham FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 15:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>Washington Spirit vs Orlando Pride</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Washington Spirit</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.71</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-23" data-stake="4902" data-potential="77500" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787482816125-10</h3><p>Creado 23/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.902</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>15.81</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 15:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>New England Revolution vs New York City FC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>New England Revolution</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 16:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Chapecoense SC vs São Paulo</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>São Paulo</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 13:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>Chicago Stars FC vs Racing Louisville FC</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Racing Louisville FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.71</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-23 09:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>IF Brommapojkarna vs Degerfors IF</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>IF Brommapojkarna</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-22" data-stake="4951" data-potential="93870" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1787396415619-8</h3><p>Creado 22/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.951</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>18.96</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-22 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>New York Red Bulls vs Chicago Fire</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Chicago Fire</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.35</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-22 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Cruzeiro vs Flamengo</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Flamengo</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.30</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-22 20:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>Puebla vs Santos</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Puebla</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.10</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-22 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Nashville SC vs Columbus Crew</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Nashville SC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.67</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-16" data-stake="4976" data-potential="75983" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1786878019122-7</h3><p>Creado 16/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.976</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>15.27</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 09:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Chapecoense SC vs Esporte Clube Bahia</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Esporte Clube Bahia</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Austin FC vs FC Dallas</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>FC Dallas</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 16:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Mirassol FC vs Flamengo</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Flamengo</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.87</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-16 10:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>Sarpsborg 08 vs Sandefjord Fotball</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Sarpsborg 08</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.77</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-15" data-stake="5000" data-potential="76000" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1786791616775-6</h3><p>Creado 15/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 5.000</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>15.20</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-15 08:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>Mjällby AIF vs IK Sirius</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>IK Sirius</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-15 18:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Charlotte FC vs Columbus SC</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Charlotte FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-15 19:45</strong></div>
+        <div class="cell"><span>Liga</span><strong>NWSL</strong></div>
+        <div class="cell"><span>Partido</span><strong>Portland Thorns FC vs Orlando Pride</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Portland Thorns FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.95</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-15 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Houston Dynamo FC vs LA Galaxy</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Houston Dynamo FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.69</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-09" data-stake="5000" data-potential="59250" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1786273236774-5</h3><p>Creado 9/08/2026, 6:00 a. m.</p><span class="status status-lost">Perdida</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 5.000</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>11.85</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 0</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-09 10:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>Hamarkameratene vs Aalesunds FK</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Hamarkameratene</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.10</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-09 14:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Brasileirão Serie A</strong></div>
+        <div class="cell"><span>Partido</span><strong>Esporte Clube Bahia vs Vasco da Gama</strong></div>
+        <div class="cell pick"><span>1X2 · LOCAL</span><strong>Esporte Clube Bahia</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.00</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-09 09:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>Halmstads BK vs GAIS</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>GAIS</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.67</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-09 12:15</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>Kristiansund BK vs Molde</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Molde</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>1.69</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-02" data-stake="4925" data-potential="20192" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1785668426633-4</h3><p>Creado 2/08/2026, 6:00 a. m.</p><span class="status status-won">Ganada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.925</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.10</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 20.192</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-02 10:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Norwegian Eliteserien</strong></div>
+        <div class="cell"><span>Partido</span><strong>Aalesund vs Tromso</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Tromso</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.00</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-02 07:00</strong></div>
+        <div class="cell"><span>Liga</span><strong>Swedish Allsvenskan</strong></div>
+        <div class="cell"><span>Partido</span><strong>IF Brommapojkarna vs Malmö FF</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Malmö FF</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.05</strong></div>
+      </div>
+    </article>
+    <article class="record" data-date="2026-08-01" data-stake="4975" data-potential="24626" hidden>
+      <header class="record-header">
+        <div class="record-title"><h3>sim-1785520614885-2</h3><p>Creado 31/07/2026, 12:56 p. m.</p><span class="status status-void">Anulada</span></div>
+        <div class="stat"><span>Monto</span><strong>$ 4.975</strong></div>
+        <div class="stat"><span>Cuota combinada</span><strong>4.95</strong></div>
+        <div class="stat"><span>Retorno</span><strong>$ 4.975</strong></div>
+      </header>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-01 20:06</strong></div>
+        <div class="cell"><span>Liga</span><strong>Liga MX</strong></div>
+        <div class="cell"><span>Partido</span><strong>León vs Pachuca</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Pachuca</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.25</strong></div>
+      </div>
+      <div class="leg">
+        <div class="cell"><span>Hora Colombia</span><strong>2026-08-01 19:30</strong></div>
+        <div class="cell"><span>Liga</span><strong>MLS</strong></div>
+        <div class="cell"><span>Partido</span><strong>Sporting Kansas City vs Houston Dynamo FC</strong></div>
+        <div class="cell pick"><span>1X2 · VISITANTE</span><strong>Houston Dynamo FC</strong></div>
+        <div class="cell"><span>Cuota ref.</span><strong>2.20</strong></div>
+      </div>
+    </article></section>
+    <div class="empty" id="empty" hidden><strong>No hay combinadas para partidos de esta fecha.</strong><br>El CSV contiene únicamente los encabezados.</div>
+    <p class="footer">Actualizado 9/09/2026, 5:00 a. m. Las cuotas son referencias de entrenamiento y los registros permanecen en simulación.</p>
+  </main>
+  <script>
+    const dateFilter = document.getElementById("date-filter");
+    const records = Array.from(document.querySelectorAll(".record"));
+    const money = new Intl.NumberFormat("es-CO", { style: "currency", currency: "COP", maximumFractionDigits: 0 });
+    dateFilter.addEventListener("change", updateDate);
+    updateDate();
+
+    function updateDate() {
+      const selected = dateFilter.value;
+      let count = 0;
+      let stake = 0;
+      let potential = 0;
+      for (const record of records) {
+        const visible = record.dataset.date === selected;
+        record.hidden = !visible;
+        if (!visible) continue;
+        count += 1;
+        stake += Number(record.dataset.stake || 0);
+        potential += Number(record.dataset.potential || 0);
+      }
+      document.getElementById("metric-count").textContent = String(count);
+      document.getElementById("metric-stake").textContent = money.format(stake);
+      document.getElementById("metric-potential").textContent = money.format(potential);
+      document.getElementById("records-title").textContent = "Combinadas del " + dateFilter.options[dateFilter.selectedIndex].text;
+      document.getElementById("empty").hidden = count > 0;
+      document.getElementById("csv-download").href = "data/combinados/" + selected.slice(0, 7) + "/" + selected + ".csv";
+    }
+  </script>
+</body>
+</html>
