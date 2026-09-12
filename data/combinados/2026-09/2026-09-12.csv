@@ -1,9 +1,37 @@
 fecha,combinado,combinado_id,partido,estado,monto_combinado_cop,cuota_combinada,retorno_potencial_cop,retorno_real_cop,hora_colombia,liga,local,visitante,mercado,tipo_seleccion,seleccion,cuota_seleccion
-2026-09-12,1,sim-1789034468721-78,1,pending,8899,9.18,81692,,2026-09-12 11:30,English Premier League,Tottenham Hotspur,Everton,1X2,VISITANTE,Everton,3.60
-2026-09-12,1,sim-1789034468721-78,2,pending,8899,9.18,81692,,2026-09-12 13:45,French Ligue 1,AJ Auxerre,Nice,1X2,LOCAL,AJ Auxerre,2.55
-2026-09-12,2,sim-1789034468721-79,1,pending,8810,9.10,80171,,2026-09-12 18:00,Argentine Liga Profesional de Fútbol,Talleres de Córdoba,Unión de Santa Fe,1X2,VISITANTE,Unión de Santa Fe,3.50
-2026-09-12,2,sim-1789034468721-79,2,pending,8810,9.10,80171,,2026-09-12 13:45,French Ligue 1,FC Lorient,Toulouse FC,1X2,LOCAL,FC Lorient,2.60
-2026-09-12,3,sim-1789034468721-81,1,pending,8635,8.09,69857,,2026-09-12 08:30,German Bundesliga,FC Augsburg,Leverkusen,1X2,LOCAL,FC Augsburg,3.85
-2026-09-12,3,sim-1789034468721-81,2,pending,8635,8.09,69857,,2026-09-12 09:15,Spanish LALIGA,Osasuna,Espanyol,1X2,LOCAL,Osasuna,2.10
-2026-09-12,4,sim-1789034468721-82,1,pending,533,10.56,5628,,2026-09-12 18:30,MLS,Inter Miami CF,Nashville Soccer Club,1X2,VISITANTE,Nashville Soccer Club,3.25
-2026-09-12,4,sim-1789034468721-82,2,pending,533,10.56,5628,,2026-09-12 18:30,MLS,FC Cincinnati,Charlotte FC,1X2,VISITANTE,Charlotte FC,3.25
+2026-09-12,1,sim-1789207268544-85,1,pending,8373,7.79,65225,,2026-09-12 11:00,Norwegian Eliteserien,Rosenborg BK,Tromsø,1X2,VISITANTE,Tromsø,4.90
+2026-09-12,1,sim-1789207268544-85,2,pending,8373,7.79,65225,,2026-09-12 14:00,Dutch Eredivisie,SC Cambuur,NEC Nijmegen,1X2,VISITANTE,NEC Nijmegen,1.59
+2026-09-12,2,sim-1789207268544-86,1,pending,8290,8.39,69553,,2026-09-12 14:00,Brasileirão Serie A,Gremio FBPA,Vasco da Gama,1X2,LOCAL,Gremio FBPA,3.05
+2026-09-12,2,sim-1789207268544-86,2,pending,8290,8.39,69553,,2026-09-12 13:45,French Ligue 1,Le Havre AC,Angers SCO,1X2,LOCAL,Le Havre AC,2.75
+2026-09-12,3,sim-1789034468721-78,1,pending,8899,9.18,81692,,2026-09-12 11:30,English Premier League,Tottenham Hotspur,Everton,1X2,VISITANTE,Everton,3.60
+2026-09-12,3,sim-1789034468721-78,2,pending,8899,9.18,81692,,2026-09-12 13:45,French Ligue 1,AJ Auxerre,Nice,1X2,LOCAL,AJ Auxerre,2.55
+2026-09-12,4,sim-1789034468721-79,1,placed,8810,9.10,80171,,2026-09-12 18:00,Argentine Liga Profesional de Fútbol,Talleres de Córdoba,Unión de Santa Fe,1X2,VISITANTE,Unión de Santa Fe,3.50
+2026-09-12,4,sim-1789034468721-79,2,placed,8810,9.10,80171,,2026-09-12 13:45,French Ligue 1,FC Lorient,Toulouse FC,1X2,LOCAL,FC Lorient,2.60
+2026-09-12,5,sim-1789034468721-81,1,placed,8635,8.09,69857,,2026-09-12 08:30,German Bundesliga,FC Augsburg,Leverkusen,1X2,LOCAL,FC Augsburg,3.85
+2026-09-12,5,sim-1789034468721-81,2,placed,8635,8.09,69857,,2026-09-12 09:15,Spanish LALIGA,Osasuna,Espanyol,1X2,LOCAL,Osasuna,2.10
+2026-09-12,6,sim-1789034468721-82,1,placed,533,10.56,5628,,2026-09-12 18:30,MLS,Inter Miami CF,Nashville Soccer Club,1X2,VISITANTE,Nashville Soccer Club,3.25
+2026-09-12,6,sim-1789034468721-82,2,placed,533,10.56,5628,,2026-09-12 18:30,MLS,FC Cincinnati,Charlotte FC,1X2,VISITANTE,Charlotte FC,3.25
+2026-09-12,7,sim-1789207279034-3,1,pending,2982,155.05,462359,,2026-09-12 11:30,English Premier League,Tottenham Hotspur,Everton,1X2,VISITANTE,Everton,3.50
+2026-09-12,7,sim-1789207279034-3,2,pending,2982,155.05,462359,,2026-09-12 14:00,Brasileirão Serie A,Gremio FBPA,Vasco da Gama,1X2,LOCAL,Gremio FBPA,3.05
+2026-09-12,7,sim-1789207279034-3,3,pending,2982,155.05,462359,,2026-09-12 13:45,French Ligue 1,AJ Auxerre,Nice,1X2,LOCAL,AJ Auxerre,2.80
+2026-09-12,7,sim-1789207279034-3,4,pending,2982,155.05,462359,,2026-09-12 09:15,Spanish LALIGA,Osasuna,Espanyol,1X2,LOCAL,Osasuna,2.25
+2026-09-12,7,sim-1789207279034-3,5,pending,2982,155.05,462359,,2026-09-12 14:00,Dutch Eredivisie,SC Cambuur,NEC Nijmegen,1X2,VISITANTE,NEC Nijmegen,1.59
+2026-09-12,7,sim-1789207279034-3,6,pending,2982,155.05,462359,,2026-09-12 12:45,Argentine Liga Profesional de Fútbol,Independiente Rivadavia,Aldosivi,1X2,LOCAL,Independiente Rivadavia,1.45
+2026-09-12,8,sim-1789207279034-4,1,pending,2973,152.84,454393,,2026-09-12 18:00,Argentine Liga Profesional de Fútbol,Talleres de Córdoba,Unión de Santa Fe,1X2,VISITANTE,Unión de Santa Fe,3.45
+2026-09-12,8,sim-1789207279034-4,2,pending,2973,152.84,454393,,2026-09-12 14:00,Brasileirão Serie A,Gremio FBPA,Vasco da Gama,1X2,LOCAL,Gremio FBPA,3.05
+2026-09-12,8,sim-1789207279034-4,3,pending,2973,152.84,454393,,2026-09-12 13:45,French Ligue 1,AJ Auxerre,Nice,1X2,LOCAL,AJ Auxerre,2.80
+2026-09-12,8,sim-1789207279034-4,4,pending,2973,152.84,454393,,2026-09-12 09:15,Spanish LALIGA,Osasuna,Espanyol,1X2,LOCAL,Osasuna,2.25
+2026-09-12,8,sim-1789207279034-4,5,pending,2973,152.84,454393,,2026-09-12 14:00,Dutch Eredivisie,SC Cambuur,NEC Nijmegen,1X2,VISITANTE,NEC Nijmegen,1.59
+2026-09-12,8,sim-1789207279034-4,6,pending,2973,152.84,454393,,2026-09-12 12:45,Argentine Liga Profesional de Fútbol,Independiente Rivadavia,Aldosivi,1X2,LOCAL,Independiente Rivadavia,1.45
+2026-09-12,9,sim-1789148091759-1,1,lost,3000,184.12,552360,0,2026-09-12 18:00,Argentine Liga Profesional de Fútbol,Talleres de Córdoba,Unión de Santa Fe,1X2,VISITANTE,Unión de Santa Fe,3.50
+2026-09-12,9,sim-1789148091759-1,2,lost,3000,184.12,552360,0,2026-09-12 09:15,Spanish LALIGA,Osasuna,Espanyol,1X2,LOCAL,Osasuna,2.20
+2026-09-12,9,sim-1789148091759-1,3,lost,3000,184.12,552360,0,2026-09-11 15:00,Argentine Liga Profesional de Fútbol,Newell's Old Boys,Vélez Sársfield,1X2,VISITANTE,Vélez Sársfield,2.70
+2026-09-12,9,sim-1789148091759-1,4,lost,3000,184.12,552360,0,2026-09-12 13:45,French Ligue 1,AJ Auxerre,Nice,1X2,LOCAL,AJ Auxerre,2.55
+2026-09-12,9,sim-1789148091759-1,5,lost,3000,184.12,552360,0,2026-09-11 22:00,Liga MX,Atlante,Pachuca,1X2,VISITANTE,Pachuca,2.30
+2026-09-12,9,sim-1789148091759-1,6,lost,3000,184.12,552360,0,2026-09-12 14:00,Dutch Eredivisie,SC Cambuur,NEC Nijmegen,1X2,VISITANTE,NEC Nijmegen,1.51
+2026-09-12,10,sim-1789148091759-2,1,placed,2991,177.30,530304,,2026-09-12 18:00,Argentine Liga Profesional de Fútbol,Talleres de Córdoba,Unión de Santa Fe,1X2,VISITANTE,Unión de Santa Fe,3.50
+2026-09-12,10,sim-1789148091759-2,2,placed,2991,177.30,530304,,2026-09-12 09:15,Spanish LALIGA,Osasuna,Espanyol,1X2,LOCAL,Osasuna,2.20
+2026-09-12,10,sim-1789148091759-2,3,placed,2991,177.30,530304,,2026-09-12 13:45,French Ligue 1,FC Lorient,Toulouse FC,1X2,LOCAL,FC Lorient,2.60
+2026-09-12,10,sim-1789148091759-2,4,placed,2991,177.30,530304,,2026-09-12 13:45,French Ligue 1,AJ Auxerre,Nice,1X2,LOCAL,AJ Auxerre,2.55
+2026-09-12,10,sim-1789148091759-2,5,placed,2991,177.30,530304,,2026-09-11 22:00,Liga MX,Atlante,Pachuca,1X2,VISITANTE,Pachuca,2.30
+2026-09-12,10,sim-1789148091759-2,6,placed,2991,177.30,530304,,2026-09-12 14:00,Dutch Eredivisie,SC Cambuur,NEC Nijmegen,1X2,VISITANTE,NEC Nijmegen,1.51
